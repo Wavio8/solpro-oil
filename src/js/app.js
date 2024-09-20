@@ -8,11 +8,16 @@
 // import selectorInit from "./selector";
 // import filterInit from "./filter";
 import "../scss/app.scss";
-import componentsInit from "./components";
-
+// import componentsInit from "./components";
+// import componentsInit from "./comfort";
+import counterFn from "./counter";
+import elFn from "./enemies";
+import swiperFn from "./swiper";
 const start = () => {
-  // slidersInit();
-  // popupInit();
+
+  counterFn();
+  elFn();
+  swiperFn();
   // openInit();
   // closeInit();
   // selectorInit();
@@ -24,9 +29,10 @@ const start = () => {
   // menu.open();
 
 
-  componentsInit();
+  
 
   console.log("loaded");
 };
 
 document.addEventListener("DOMContentLoaded", start);
+
