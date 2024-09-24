@@ -9,8 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>-->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/index.css">
+
     <title>Solpro</title>
 </head>
 
@@ -116,6 +123,20 @@
         </section>
 
         <section class="savings">
+            <img src="/images/source/waveOil1.png" alt="" class="savings-bg">
+            <img src="/images/source/image-cap1.png" alt="" id="image-cap1" class="img-cap">
+            <img src="/images/source/image-cap2.png" alt="" id="image-cap2" class="img-cap">
+            <img src="/images/source/img-cap3.png" alt="" id="image-cap3" class="img-cap">
+            <img src="/images/source/img-cap4.png" alt="" id="image-cap4" class="img-cap">
+            <img src="/images/source/img-cap5.png" alt="" id="image-cap5" class="img-cap">
+            <img src="/images/source/img-cap6.png" alt="" id="image-cap6" class="img-cap">
+            <img src="/images/source/img-cap7.png" alt="" id="image-cap7" class="img-cap">
+            <img src="/images/source/img-cap8.png" alt="" id="image-cap8" class="img-cap">
+            <img src="/images/source/img-cap9.png" alt="" id="image-cap9" class="img-cap">
+            <img src="/images/source/img-cap10.png" alt="" id="image-cap10" class="img-cap">
+            <img src="/images/source/img-cap11.png" alt="" id="image-cap11" class="img-cap">
+            <img src="/images/source/img-cap12.png" alt="" id="image-cap12" class="img-cap">
+            <span class="flare"></span>
             <div class="container_big container_big-savings">
                 <!-- <img src="/images/source/savings-oil.svg" alt="Капли масла" class="savings-oil"> -->
                 <p class="savings__text text-yellow" style="font-size: 50px;">до <span style="font-size: 180px;">15–17
@@ -143,7 +164,7 @@
         <section class="heands"></section>
         <section class="oil-man">
             <div class="sunflower__wrapper">
-                <img src="/images/source/oil-man__logo1.png" alt="Логотип" class="oil-man__logo">
+                <img src="/images/source/oil-man__logo1.png" alt="Логотип" class="oil-man__logo oil-man__logo-sunflower">
                 <img src="/images/source/sunflower-4.png" alt="" class="sunflower-4">
                 <img src="/images/source/sunflower-5.png" alt="" class="sunflower-5">
             </div>
@@ -173,7 +194,7 @@
                             использования, надолго сохраняя свои свойства.</span>
                     </p>
                 </div>
-                
+
                 <div class="container">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -211,7 +232,8 @@
             <img src="/images/source/sunflower-12.png" alt="" class="sunflower-12">
             <img src="/images/source/sunflower-13.png" alt="" class="sunflower-13">
             <div class="container">
-                <img src="/images/source/oilman-3.png" alt="Человек масло" class="oil-man_second-img">
+<!--                <img src="/images/source/oilman-3.png" alt="Человек масло" class="oil-man_second-img">-->
+                <img src="/images/source/oilman_gif Serious Animation.gif" alt="Человек масло" class="oil-man_second-img">
                 <img src="/images/source/logo-transparent.svg" alt="Логотип" class="oil-man__logo_second">
             </div>
         </section>
@@ -389,9 +411,9 @@
                                 <p class="stability__item-number">25</p>
                             </li>
                             <li class="stability__item stability__item_note">
-                                <p class="stability__item-desc">Высокоолеиновое
+                                <p class="stability__item-desc ">Высокоолеиновое
                                     подсолнечное масло</p>
-                                <div class="stability__item-progress"></div>
+                                <div class="stability__item-progress glare-button"></div>
                                 <p class="stability__item-number">20</p>
                             </li>
                             <li class="stability__item">
@@ -422,7 +444,7 @@
                             </li>
                             <li class="stability__item stability__item_note">
                                 <p class="stability__item-desc text-yellow">Подсолнечное масло</p>
-                                <div class="stability__item-progress"></div>
+                                <div class="stability__item-progress glare-button"></div>
                                 <p class="stability__item-number">6</p>
                             </li>
                         </ul>
@@ -511,8 +533,9 @@
                 </div>
             </div>
         </section>
-        <section class="base">
-            <div class="container">
+        <section class="base" style="position: relative;overflow: hidden">
+            <video  autoplay width="100%" loop  src="/videos/stock-footage-super-slow-motion-shot-of-waving-golden-liquid-background-at-fps.webm" style="position: absolute;top:-600px;left: 0;" class="super-slow"></video>
+            <div class="container" style="position: relative;z-index: 8000">
                 <div class="base__container_flex">
                     <div class="base__text">
                         <h2 class="base__title text-gray"><span style="font-weight: 700;">Основа смесей для фритюров
@@ -883,7 +906,8 @@
             <img src="/images/source/sunflower-33.png" alt="" class="sunflower-33">
             <div class="container">
                 <div class="rusagro__container_flex">
-                    <img src="/images/source/rusagro-img.svg" alt="РУСАГРО" class="rusagro__img">
+                    <img src="/images/source/rusagro-img.svg" alt="РУСАГРО" class="rusagro__img" data-aos="fade-down" data-aos-easing="linear"
+                         data-aos-duration="500">
                     <p class="rusagro__content">Группа компаний «Русагро» — один из крупнейших вертикально
                         интегрированных
                         агрохолдингов России. Группа компаний занимает значительную долю внутреннего производства
@@ -900,13 +924,13 @@
                 <div class="yellow-box__wrapper">
                     <div class="assortment__yellow-box">
                         <p class="assortment__note tetx-white">Профессиональные масла и смеси <br> для фритюра Solpro</p>
-                        
+
                     </div>
                     <h1 class="assortment__title tetx-white">Ассортимент дивизиона промышленных жиров <span
                         class="text-yellow">«Русагро»</span> для пищевых производств
                     </h1>
                 </div>
-                
+
                 <div class="assortment__container_grid ">
                     <div class="assortiment__card assortment__card1 border-10">
                         <div class="assortment__card_click">
@@ -966,20 +990,61 @@
             <div class="item" data-replacement="replacement2">Объект 2</div>
             <div class="item" data-replacement="replacement3">Объект 3</div>
         </div>
-    
+
         <div class="replacement" id="replacement1">2</div>
         <div class="replacement" id="replacement2">2</div>
         <div class="replacement" id="replacement3">3</div>
 
     </main>
 
- 
-    
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/comfort.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/enemies.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const backgroundImage = document.querySelector('.savings-bg');
+    const savingsSection = document.querySelector('.savings');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          backgroundImage.classList.add('animate'); // Добавляем анимацию
+        } else {
+          backgroundImage.classList.remove('animate');
+        }
+      });
+    }, {
+      threshold: 0.2 // Срабатывает, когда 50% секции будет видно
+    });
+
+    observer.observe(savingsSection);
+  });
+</script>
+
+<!--    <script>-->
+
+<!--      // document.addEventListener("DOMContentLoaded", (event) => {-->
+<!--      //   // gsap.registerPlugin(ScrollTrigger);-->
+<!--      //   gsap.to(".sunflower__wrapper", {-->
+<!--      //     scrollTrigger: ".sunflower__wrapper",-->
+<!--      //     duration:5,-->
+<!--      //     y: "100%",-->
+<!--      //-->
+<!--      //   });-->
+<!--      //-->
+<!--      // });-->
+
+
+
+<!--    </script>-->
+
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

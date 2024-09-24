@@ -265,10 +265,10 @@ a{
 
 .prewiev{
   background: url('/src/images/source/oil-img1.png');
-  background-position: top left; 
+  background-position: top left;
   background-size: 556px auto;
   background-repeat: no-repeat;
-  
+
 }
 
 
@@ -404,8 +404,8 @@ a{
 }
 
 .bottle__card-text{
-  
-} 
+
+}
 
 .bottle__card_botton{
   display: flex;
@@ -623,11 +623,20 @@ a{
   transform: translateX(-50%);
   left: 50%; */
   position: absolute;
-  bottom: 120px;
-  transform: translateX(-50%);
-  left: 50%;
+  //bottom: 0px;
+left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  //left: 50%;
+  bottom: 118px;
   height: 470px;
   width: 1580px;
+}
+.oil-man__logo-sunflower{
+  //transform: translateX(-50%);
+  bottom: -638px;
+  position: relative;
 }
 
 .oil-advantage{
@@ -724,7 +733,7 @@ a{
 
 .savings__text{
   margin-bottom: 10px;
-  background-image: linear-gradient(to right,  #F5C51B 0%, #ED8E00 100%); 
+  background-image: linear-gradient(to right,  #F5C51B 0%, #ED8E00 100%);
 /* Градиент */
   -webkit-background-clip: text; /* Клипирование фона под текст */
   -webkit-text-fill-color: transparent; /* Делаем текст прозрачным */
@@ -737,18 +746,134 @@ a{
 
 .savings{
   margin-bottom: 147px;
-  background-image: url('/src/images/source/savages-bb-1.png');
+  //background-image: url('/src/images/source/savages-bb-1.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 850px;
   margin-bottom: 150px;
+  //overflow: hidden;
   border-bottom:  1px solid rgba(207, 207, 207, 1);
+  position: relative;
+}
+.savings-bg{
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+
+
+  overflow-x: hidden;
+  //opacity: 0;
+  //transition: transform 2.5s ease-out, opacity 2s ease-out ;
+
 }
 
+.flare {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 300px;
+  transform: skewX(-58deg); // Наклон
+  //animation: flareAnimation;
+  left: -150%;
+  //background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+  animation: flareAnimation 2s infinite linear; // Время и тип анимации можно менять
+
+  //background: radial-gradient(at left top, rgba(255, 255, 255, 0.2), rgba(255, 249, 219,0.2));
+
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 227, 85, 0.2));
+}
+@keyframes flareAnimation {
+  0% {
+    left: -150%;
+    opacity: 0;
+  }
+  55% {
+
+    opacity: 0;
+  }
+  60% {
+
+    opacity: 0;
+  }
+  70% {
+
+    opacity: 1;
+  }
+
+  80% {
+
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    left: 150%;
+  }
+}
+.savings-bg.animate {
+  transform: translateX(-100%);
+  opacity: 1;
+}
 .rusagro_first{
   margin-bottom: 43px;
 }
+.img-cap{
+  position: absolute;
+}
+#image-cap1{
+  bottom: 30px;
+  left: 360px;
+}
+#image-cap2{
+  bottom: 90px;
+  left: 429px;
+}
+#image-cap3{
+  bottom: -1px;
+  left: -18px;
+}
+
+#image-cap4{
+  right: 351px;
+  bottom: 37px;
+}
+#image-cap5{
+  right: 299px;
+  top: -13px;
+}
+#image-cap6{
+  right: 561px;
+  top: 80px;
+}
+#image-cap7{
+  right: 599px;
+  top: 204px;
+}
+#image-cap8{
+  right: 557px;
+  bottom: 292px;
+}
+
+#image-cap9{
+  right: 558px;
+  bottom: 195px;
+}
+#image-cap10{
+  right: 636px;
+  bottom: 189px;
+}
+#image-cap11{
+  right: 702px;
+  top: 401px;
+}
+#image-cap12{
+  right: 843px;
+  top: 291px;
+}
+
 
 
 .rusagro__title{
@@ -823,7 +948,7 @@ a{
 }
 .oil-man__desc::before{
   content: '';
-  
+
 }
 
 
@@ -891,7 +1016,7 @@ a{
 }
 
 .oil-man_second-img{
-  height: 928px;
+  height: auto;
   object-fit: contain;
   position: absolute;
   bottom: 0;
@@ -1063,7 +1188,7 @@ text-wrap: nowrap;
   font-size: 24px;
   font-weight: 700;
   line-height: 26px;
-  text-align: left;    
+  text-align: left;
   margin-bottom: 16px;
 }
 .bom__card-desc{
@@ -1197,62 +1322,71 @@ text-wrap: nowrap;
   letter-spacing: -0.04em;
   color: rgba(181, 218, 190, 1);
 }
+.stability__list > ul > li{
+  //overflow: hidden;
 
+}
+.stability__item-progress{
+  overflow: hidden;
+  position: relative;
+}
 .stability__list > ul > li:nth-child(1) > div {
   background-color: rgba(181, 218, 190, 1);
   height: 35px;
   width: 408px;
   border-radius: 38px;
-}  
+}
 .stability__list > ul > li:nth-child(2) > div {
   background-color: rgba(181, 218, 190, 1);
   height: 35px;
   width: 344px;
   border-radius: 38px;
-}  
+}
 .stability__list > ul > li:nth-child(3) > div {
   background: linear-gradient(90deg, #F5C51B 0%, #ED8E00 100%);
   height: 35px;
   width: 293px;
+  position: relative;
+  overflow: hidden;
   border-radius: 38px;
-}  
+}
 .stability__list > ul > li:nth-child(4) > div {
   background-color: rgba(181, 218, 190, 1);
   height: 35px;
   width: 249px;
   border-radius: 38px;
-}  
+}
 .stability__list > ul > li:nth-child(5) > div {
   background-color: rgba(181, 218, 190, 1);
   height: 35px;
   width: 204px;
   border-radius: 38px;
-}  
+}
 
 .stability__list > ul > li:nth-child(6) > div {
   background-color: rgba(181, 218, 190, 1);
   height: 35px;
   width: 165px;
   border-radius: 38px;
-}  
+}
 .stability__list > ul > li:nth-child(7) > div {
   background-color: rgba(181, 218, 190, 1);
   height: 35px;
   width: 128px;
   border-radius: 38px;
-}  
+}
 .stability__list > ul > li:nth-child(8) > div {
   background-color: rgba(181, 218, 190, 1);
   height: 35px;
   width: 99px;
   border-radius: 38px;
-}  
+}
 .stability__list > ul > li:nth-child(9) > div {
   background: linear-gradient(90deg, #F5C51B 0%, #ED8E00 100%);
   height: 35px;
   width: 64px;
   border-radius: 38px;
-}  
+}
 
 .stability__content{
   display: flex;
@@ -1622,8 +1756,8 @@ margin-left: 200px;
   background-position: center;
   background-repeat: no-repeat;
   height: 669px;
-  width: 579px;  
-  max-width: 579px;    
+  width: 579px;
+  max-width: 579px;
   padding: 97px 78px 97px 89px;
 
   display: none;
@@ -1822,7 +1956,7 @@ background-clip: text;
 
 .fuming__content{
   position: relative;
-  
+
 }
 .fuming__content-box{
   width: 880px;
@@ -2071,7 +2205,7 @@ background: linear-gradient(90deg, #F5C51B 0%, #ED8E00 100%);
   display: grid;
   height: 500px;
   gap: 25px;
-  grid-template-areas: 'f f f f i i i b o o o o' 
+  grid-template-areas: 'f f f f i i i b o o o o'
                        'f f f f i i i b o o o o'
                        'f f f f i i i b o o o o'
                        'n n n n i i i b r r r r'
@@ -2253,7 +2387,7 @@ background: linear-gradient(90deg, #F5C51B 0%, #ED8E00 100%);
 }
 
 .box-second {
-  opacity: 0; /* Скрыт по умолчанию */ 
+  opacity: 0; /* Скрыт по умолчанию */
 }
 
 .box-second.active {
@@ -2264,5 +2398,34 @@ background: linear-gradient(90deg, #F5C51B 0%, #ED8E00 100%);
   max-width: 1920px;
   overflow-x: hidden;
   background-color: red;
+}
+
+.glare-button:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+                  120deg,
+                  rgba(255, 255, 255, 0) 30%, /* Прозрачность начала блика */
+                  rgba(255, 255, 255, 0.8), /* Цвет блика */
+                  rgba(255, 255, 255, 0) 70% /* Прозрачность конца блика */
+  );
+  top: 0;
+  left: -100px;
+  animation: shine 2s infinite linear; /* Анимация блика */
+}
+
+/* Ключевые кадры для анимации блика */
+@keyframes shine {
+  0% {
+    left: -100px; /* Начальная позиция блика (левая сторона кнопки) */
+  }
+  20% {
+    left: 100%; /* Позиция блика в конце (правая сторона кнопки) */
+  }
+  100% {
+    left: 100%; /* Завершение анимации */
+  }
 }
 

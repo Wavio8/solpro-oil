@@ -8,16 +8,17 @@
 // import selectorInit from "./selector";
 // import filterInit from "./filter";
 import "../scss/app.scss";
-// import componentsInit from "./components";
+import scrollGsap from "./scrollGsap";
 // import componentsInit from "./comfort";
 import counterFn from "./counter";
 import elFn from "./enemies";
 import swiperFn from "./swiper";
-const start = () => {
 
+const start = () => {
   counterFn();
   elFn();
   swiperFn();
+  scrollGsap();
   // openInit();
   // closeInit();
   // selectorInit();
@@ -28,11 +29,7 @@ const start = () => {
   // const menu = burgerMenuItit();
   // menu.open();
 
-
-  
-
   console.log("loaded");
 };
 
 document.addEventListener("DOMContentLoaded", start);
-
