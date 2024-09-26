@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/images/source/logo_green.svg" sizes="16x16">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
@@ -13,18 +13,22 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<!--    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>-->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/index.css">
-
     <title>Solpro</title>
 </head>
-
 <body>
     <header>
         <section class="menu">
             <div class="container_big">
+
+                <div class="btn-adapt">
+                    <span class="btn-adapt-line"></span>
+                    <span class="btn-adapt-line"></span>
+                    <span class="btn-adapt-line"></span>
+                </div>
+                <div class="menu-blur"></div>
+
                 <nav class="menu__container">
                     <img src="/images/source/logo_white.svg" alt="Логотип" class="menu__logo">
                     <ul class="menu__wrapper">
@@ -33,17 +37,31 @@
                         <li class="menu__item"><a href="" class="menu__link tetx-white">Применение</a></li>
                         <li class="menu__item"><a href="" class="menu__link tetx-white">Ассортимент</a></li>
                         <li class="menu__item"><a href="" class="menu__link tetx-white">Контакты</a></li>
+                        <div class="footer__wrapper-social menu-el_adapt">
+                            <p class="footer__social-desc">Горячая линия:</p>
+                            <a href="tel:+79995557768" class="footer__social-tel">+7 (999) 555-77-68</a>
+                            <div class="social__wrapper">
+                                <a href="../src/images/source/vk-oil.svg" class="social__wrapper-icon">
+                                    <img src="" alt="" class="rules__link-img">
+                                </a>
+                                <a href="./images/source/tg-oil.svg" class="social__wrapper-icon">
+                                    <img src="" alt="" class="rules__link-img">
+                                </a>
+                                <a href="/src/images/source/wa-oil.svg" class="social__wrapper-icon">
+                                    <img src="" alt="" class="rules__link-img">
+                                </a>
+                            </div>
+                            <button class="menu__btn progect__btn tetx-white hadow__btn_bottom menu__btn_adapt-menu">Оставить заявку</button>
+                            <a href="" class="rules__link rules__link_adapt-menu">© 2024 ООО «Solpro». Все права защищены</a>
+                        </div>
                     </ul>
                     <div class="menu__container_flex">
                         <a href="" class="menu__link_phone tetx-white">+7 (920) 008-90-90</a>
                         <button class="menu__btn progect__btn tetx-white hadow__btn_bottom">Оставить заявку</button>
                     </div>
                 </nav>
-
-
-
                 <h1 class="menu__title text-yellow">Профессиональные <br><span
-                        class="tetx-white menu__title_padding">фритюрные смеси и
+                        class="tetx-white menu__title_padding">фритюрные <br> смеси и
                         масла</span></h1>
             </div>
         </section>
@@ -52,14 +70,34 @@
     <main>
         <section class="green-line">
             <div id="ticker" class="ticker ticker__header">
-                <div class="ticker-list items">
-                    <p class="ticker__text uppercase tetx-white">SOLPRO — ЛИДЕР МАСЛОЖИРОВОЙ ОТРАСЛИ, ПЕРЕДОВОЙ
-                        РОССИЙСКИЙ
-                        БРЕНД, СОЗДАТЕЛЬ ИННОВАЦИОННЫХ ПРОДУКТОВ И ТЕХНОЛОГИЙ</p>
-                    <p class="ticker__text uppercase tetx-white">SOLPRO — ЛИДЕР МАСЛОЖИРОВОЙ ОТРАСЛИ, ПЕРЕДОВОЙ
-                        РОССИЙСКИЙ
-                        БРЕНД, СОЗДАТЕЛЬ ИННОВАЦИОННЫХ ПРОДУКТОВ И ТЕХНОЛОГИЙ</p>
-                </div>
+                <ul class="ticker-list items">
+                    <li class="ticker__text">
+                        SOLPRO — ЛИДЕР МАСЛОЖИРОВОЙ ОТРАСЛИ, ПЕРЕДОВОЙ РОССИЙСКИЙ БРЕНД, СОЗДАТЕЛЬ ИННОВАЦИОННЫХ
+                        ПРОДУКТОВ И ТЕХНОЛОГИЙ
+                    </li>
+                    <li class="ticker__text">
+                        SOLPRO — ЛИДЕР МАСЛОЖИРОВОЙ ОТРАСЛИ, ПЕРЕДОВОЙ РОССИЙСКИЙ БРЕНД, СОЗДАТЕЛЬ ИННОВАЦИОННЫХ
+                        ПРОДУКТОВ И ТЕХНОЛОГИЙ
+                    </li>
+                    <li class="ticker__text">
+                        SOLPRO — ЛИДЕР МАСЛОЖИРОВОЙ ОТРАСЛИ, ПЕРЕДОВОЙ РОССИЙСКИЙ БРЕНД, СОЗДАТЕЛЬ ИННОВАЦИОННЫХ
+                        ПРОДУКТОВ И ТЕХНОЛОГИЙ
+                    </li>
+                </ul>
+                <ul class="ticker-list items" aria-hidden="true">
+                    <li class="ticker__text">
+                        SOLPRO — ЛИДЕР МАСЛОЖИРОВОЙ ОТРАСЛИ, ПЕРЕДОВОЙ РОССИЙСКИЙ БРЕНД, СОЗДАТЕЛЬ ИННОВАЦИОННЫХ
+                        ПРОДУКТОВ И ТЕХНОЛОГИЙ
+                    </li>
+                    <li class="ticker__text">
+                        SOLPRO — ЛИДЕР МАСЛОЖИРОВОЙ ОТРАСЛИ, ПЕРЕДОВОЙ РОССИЙСКИЙ БРЕНД, СОЗДАТЕЛЬ ИННОВАЦИОННЫХ
+                        ПРОДУКТОВ И ТЕХНОЛОГИЙ
+                    </li>
+                    <li class="ticker__text">
+                        SOLPRO — ЛИДЕР МАСЛОЖИРОВОЙ ОТРАСЛИ, ПЕРЕДОВОЙ РОССИЙСКИЙ БРЕНД, СОЗДАТЕЛЬ ИННОВАЦИОННЫХ
+                        ПРОДУКТОВ И ТЕХНОЛОГИЙ
+                    </li>
+                </ul>
             </div>
             <section class="prewiev">
                 <div class="container">
@@ -164,7 +202,8 @@
         <section class="heands"></section>
         <section class="oil-man">
             <div class="sunflower__wrapper">
-                <img src="/images/source/oil-man__logo1.png" alt="Логотип" class="oil-man__logo oil-man__logo-sunflower">
+                <img src="/images/source/oil-man__logo1.png" alt="Логотип"
+                    class="oil-man__logo oil-man__logo-sunflower">
                 <img src="/images/source/sunflower-4.png" alt="" class="sunflower-4">
                 <img src="/images/source/sunflower-5.png" alt="" class="sunflower-5">
             </div>
@@ -184,28 +223,31 @@
             <div class="container">
                 <div class="fryer-oil__conteiner_flex">
                     <h2 class="fryer-oil__title">ФРИТЮРНЫЕ <br> <span class="text-orange">МАСЛА И СМЕСИ</span></h2>
-                    <p class="fryer-oil__desc">Масла, жиры и смеси для фритюра Solpro от «Русагро» разработаны
-                        специально для жарки и приготовления пищи при высоких температурах. Они позволяют получить
-                        ровный
-                        золотистый цвет изделия, сохранив естественные свойства продукта: сочность, вкус, структуру.
-                        Продолжительно работают во фритюрницах, сохраняя первоначальные показатели по кислотности в
-                        течение длительного периода использования. <br> <br>
-                        <span style="font-weight: 700; text-transform: uppercase;">Не впитывают запах в процессе
-                            использования, надолго сохраняя свои свойства.</span>
-                    </p>
                 </div>
 
                 <div class="container">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide">Slide 1</div>
-                          <div class="swiper-slide">Slide 2</div>
-                          <div class="swiper-slide">Slide 3</div>
-                          <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">
+                                <img src="/images/source/slider-img.png" alt="Фотография с производства"
+                                    class="swiper-slide-img_my border-10">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/images/source/slider-img.png" alt="Фотография с производства"
+                                    class="swiper-slide-img_my border-10">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/images/source/slider-img.png" alt="Фотография с производства"
+                                    class="swiper-slide-img_my border-10">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/images/source/slider-img.png" alt="Фотография с производства"
+                                    class="swiper-slide-img_my border-10">
+                            </div>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
-                      </div>
+                    </div>
                 </div>
 
                 <div class="fryer-oil__container_grid">
@@ -232,8 +274,9 @@
             <img src="/images/source/sunflower-12.png" alt="" class="sunflower-12">
             <img src="/images/source/sunflower-13.png" alt="" class="sunflower-13">
             <div class="container">
-<!--                <img src="/images/source/oilman-3.png" alt="Человек масло" class="oil-man_second-img">-->
-                <img src="/images/source/oilman_gif Serious Animation.gif" alt="Человек масло" class="oil-man_second-img">
+                <!--                <img src="/images/source/oilman-3.png" alt="Человек масло" class="oil-man_second-img">-->
+                <img src="/images/source/oilman_gif Serious Animation.gif" alt="Человек масло"
+                    class="oil-man_second-img">
                 <img src="/images/source/logo-transparent.svg" alt="Логотип" class="oil-man__logo_second">
             </div>
         </section>
@@ -295,7 +338,6 @@
             <img src="/images/source/sunflower-16.png" alt="" class="sunflower-16">
             <div class="container">
                 <div class="bom__container_flex">
-                    <h1 class="bom__title tetx-white" style="font-weight: 900; text-transform: uppercase;">BOM</h1>
                     <div class="bom__tetx-wrapper">
                         <h2 class="bom__sub-title text-gray" style="text-transform: uppercase;">ЧТО ВЫ ЗНАЕТЕ ПРО <span
                                 class="text-orange">ВОМ</span>?</h2>
@@ -309,6 +351,7 @@
                     </div>
                 </div>
                 <div class="bom__green border-10 background-green">
+                    <img src="/images/source/drop-oil.png" alt="Капля" class="drop-oil_adapt">
                     <h2 class="bom__green-title tetx-white uppercase"><span class="text-yellow">ВОМ</span> обладает
                         необходимыми
                         свойствами для обеспечения должного качества фритюрных смесей</h2>
@@ -534,7 +577,9 @@
             </div>
         </section>
         <section class="base" style="position: relative;overflow: hidden">
-            <video  autoplay width="100%" loop  src="/videos/stock-footage-super-slow-motion-shot-of-waving-golden-liquid-background-at-fps.webm" style="position: absolute;top:-600px;left: 0;" class="super-slow"></video>
+            <video autoplay width="100%" loop
+                src="/videos/stock-footage-super-slow-motion-shot-of-waving-golden-liquid-background-at-fps.webm"
+                style="position: absolute;top:-600px;left: 0;" class="super-slow"></video>
             <div class="container" style="position: relative;z-index: 8000">
                 <div class="base__container_flex">
                     <div class="base__text">
@@ -677,28 +722,29 @@
             </div>
         </section>
         <section class="fuming" id="counter-section">
-            <div class="container">
+            <div class="container fuming-img__container">
                 <div class="drop__wrapper">
                     <img src="/images/source/fuming-img.png" alt="Картинка масла" class="fuming-img border-10">
                     <img src="/images/source/drop-oil.png" alt="Капля" class="fuming__drop">
                 </div>
-                <div class="fuming__container_flex">
-                    <div class="fuming__text">
-                        <h2 class="fuming__title uppercase text-gray">ТОЧКИ ДЫМЛЕНИЯ РАСТИТЕЛЬНЫХ МАСЕЛ
-                        </h2>
-                        <p class="fuming__desc">У любого масла есть точка дымообразования. Это температура, при которой
-                            оно распадается на вредные вещества и начинает выделять едкий голубоватый дым. Рабочая
-                            температура и точка дымообразования не эквивалентны. Точка дымообразования — показатель
-                            того, какую нагрузку может выдержать то или иное масло. А рабочая температура — это
-                            параметр, при котором достигается лучший результат обжарки продукта.</p>
-                    </div>
-                    <div class="fuming__content">
-                        <div class="fuming__content-box"></div>
-                        <p class="fuming__number text-yellow"><span id="counter">265</span> °С</p>
-                        <p class="fuming__number-desc text-yellow">Высокоолеиновое подсолнечное масло рафинированное</p>
-                    </div>
+            </div>
+            <div class="fuming__container_flex">
+                <div class="fuming__text">
+                    <h2 class="fuming__title uppercase text-gray">ТОЧКИ ДЫМЛЕНИЯ РАСТИТЕЛЬНЫХ МАСЕЛ
+                    </h2>
+                    <p class="fuming__desc">У любого масла есть точка дымообразования. Это температура, при которой
+                        оно распадается на вредные вещества и начинает выделять едкий голубоватый дым. Рабочая
+                        температура и точка дымообразования не эквивалентны. Точка дымообразования — показатель
+                        того, какую нагрузку может выдержать то или иное масло. А рабочая температура — это
+                        параметр, при котором достигается лучший результат обжарки продукта.</p>
+                </div>
+                <div class="fuming__content">
+                    <p class="fuming__number text-yellow"><span id="counter">265</span> °С</p>
+                    <p class="fuming__number-desc text-yellow">Высокоолеиновое подсолнечное масло рафинированное</p>
                 </div>
             </div>
+
+
         </section>
         <section class="comparison">
             <img src="/images/source/sunflower-23.png" alt="" class="sunflower-23">
@@ -779,7 +825,7 @@
                         <p class="comparison__number">107</p>
                     </li>
                 </ul>
-                <button class="progect__btn tetx-white">Показать ещё</button>
+                <button class="progect__btn comparison__btn tetx-white ">Показать ещё</button>
             </div>
             <img src="/images/source/sunflower-27.png" alt="" class="sunflower-27">
             <img src="/images/source/sunflower-28.png" alt="" class="sunflower-28">
@@ -848,8 +894,8 @@
                             <img src="/images/source/fat-card1.svg" alt="" class="fat__card-img">
                         </div>
                         <div class="fat__card-content">
-                            <p class="fat__card-number text-yellow">14%</p>
-                            <p class="fat__card-desc tetx-white">Лапша быстрого приготовления (типа рамен)</p>
+                            <p class="fat__card-number text-yellow">10%</p>
+                            <p class="fat__card-desc tetx-white">Курица (без кожи)</p>
                         </div>
                     </div>
                     <div class="fat__card">
@@ -896,7 +942,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container container_control-img">
                 <img src="/images/source/control-img.png" alt="Лаборатория" class="control__img border-10">
             </div>
         </section>
@@ -906,8 +952,8 @@
             <img src="/images/source/sunflower-33.png" alt="" class="sunflower-33">
             <div class="container">
                 <div class="rusagro__container_flex">
-                    <img src="/images/source/rusagro-img.svg" alt="РУСАГРО" class="rusagro__img" data-aos="fade-down" data-aos-easing="linear"
-                         data-aos-duration="500">
+                    <img src="/images/source/rusagro-img.svg" alt="РУСАГРО" class="rusagro__img" data-aos="fade-down"
+                        data-aos-easing="linear" data-aos-duration="500">
                     <p class="rusagro__content">Группа компаний «Русагро» — один из крупнейших вертикально
                         интегрированных
                         агрохолдингов России. Группа компаний занимает значительную долю внутреннего производства
@@ -923,11 +969,12 @@
             <div class="container">
                 <div class="yellow-box__wrapper">
                     <div class="assortment__yellow-box">
-                        <p class="assortment__note tetx-white">Профессиональные масла и смеси <br> для фритюра Solpro</p>
+                        <p class="assortment__note tetx-white">Профессиональные масла и смеси <br> для фритюра Solpro
+                        </p>
 
                     </div>
                     <h1 class="assortment__title tetx-white">Ассортимент дивизиона промышленных жиров <span
-                        class="text-yellow">«Русагро»</span> для пищевых производств
+                            class="text-yellow">«Русагро»</span> для пищевых производств
                     </h1>
                 </div>
 
@@ -936,7 +983,8 @@
                         <div class="assortment__card_click">
                             <a href="#" class="assortment__card_click-link"></a>
                         </div>
-                        <p class="assortiment__card-desc tetx-white">Сливочное масло и промышленные сливки <span class="text-yellow">Solpro</span></p>
+                        <p class="assortiment__card-desc tetx-white">Сливочное масло и промышленные сливки <span
+                                class="text-yellow">Solpro</span></p>
                     </div>
                     <div class="assortiment__card assortment__card2 border-10">
                         <div class="assortment__card_click">
@@ -954,7 +1002,8 @@
                         <div class="assortment__card_click">
                             <a href="#" class="assortment__card_click-link"></a>
                         </div>
-                        <p class="assortiment__card assortiment__card-desc tetx-white">Заменители молочного жира <span class="text-yellow">Solpro</span>
+                        <p class="assortiment__card assortiment__card-desc tetx-white">Заменители молочного жира <span
+                                class="text-yellow">Solpro</span>
                         </p>
                     </div>
                     <div class="assortiment__card assortment__card5 border-10">
@@ -979,21 +1028,52 @@
                         <div class="assortment__card_click">
                             <a href="#" class="assortment__card_click-link"></a>
                         </div>
-                        <p class="assortiment__card-desc tetx-white">Пасты для сбивания <span class="text-yellow">Solpro</span></p>
+                        <p class="assortiment__card-desc tetx-white">Пасты для сбивания <span
+                                class="text-yellow">Solpro</span></p>
                     </div>
                 </div>
             </div>
         </section>
-
-        <div class="container-rep">
-            <div class="item" data-replacement="replacement1">Объект 1</div>
-            <div class="item" data-replacement="replacement2">Объект 2</div>
-            <div class="item" data-replacement="replacement3">Объект 3</div>
-        </div>
-
-        <div class="replacement" id="replacement1">2</div>
-        <div class="replacement" id="replacement2">2</div>
-        <div class="replacement" id="replacement3">3</div>
+        <footer>
+            <div class="container">
+                <div class="footer__container">
+                    <div class="footer__wrapper-content">
+                        <div class="footer__wrapper-logo">
+                            <a href="" class="footer__wrapper-logo-svg"></a>
+                            <p class="footer__wrapper-logo-desc">Ключевой партнер для <br> профессионалов пищевой <br>
+                                промышленности</p>
+                        </div>
+                        <ul class="footer__items">
+                            <li class="footer__item"><a href="" class="footer__item-link">О нас</a></li>
+                            <li class="footer__item"><a href="" class="footer__item-link">Ассортимент</a></li>
+                            <li class="footer__item"><a href="" class="footer__item-link">Контакты</a></li>
+                            <li class="footer__item"><a href="" class="footer__item-link">Как купить</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__wrapper-social">
+                        <p class="footer__social-desc">Горячая линия:</p>
+                        <a href="tel:+79995557768" class="footer__social-tel">+7 (999) 555-77-68</a>
+                        <div class="social__wrapper">
+                            <a href="../src/images/source/vk-oil.svg" class="social__wrapper-icon">
+                                <img src="" alt="" class="rules__link-img">
+                            </a>
+                            <a href="./images/source/tg-oil.svg" class="social__wrapper-icon">
+                                <img src="" alt="" class="rules__link-img">
+                            </a>
+                            <a href="/src/images/source/wa-oil.svg" class="social__wrapper-icon">
+                                <img src="" alt="" class="rules__link-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rules__wrapper">
+                    <a href="" class="rules__link">© 2024 ООО «Solpro». Все права защищены</a>
+                    <a href="" class="rules__link">Политика Конфиденциальности</a>
+                    <a href="" class="rules__link">Пользовательское соглашение</a>
+                    <a href="" class="rules__link">Согласие на обработку персональных данных</a>
+                </div>
+            </div>
+        </footer>
 
     </main>
 
@@ -1004,46 +1084,46 @@
     <script src="js/comfort.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/enemies.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const backgroundImage = document.querySelector('.savings-bg');
-    const savingsSection = document.querySelector('.savings');
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backgroundImage = document.querySelector('.savings-bg');
+            const savingsSection = document.querySelector('.savings');
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          backgroundImage.classList.add('animate'); // Добавляем анимацию
-        } else {
-          backgroundImage.classList.remove('animate');
-        }
-      });
-    }, {
-      threshold: 0.2 // Срабатывает, когда 50% секции будет видно
-    });
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        backgroundImage.classList.add('animate'); // Добавляем анимацию
+                    } else {
+                        backgroundImage.classList.remove('animate');
+                    }
+                });
+            }, {
+                threshold: 0.2 // Срабатывает, когда 50% секции будет видно
+            });
 
-    observer.observe(savingsSection);
-  });
-</script>
+            observer.observe(savingsSection);
+        });
+    </script>
 
-<!--    <script>-->
+    <!--    <script>-->
 
-<!--      // document.addEventListener("DOMContentLoaded", (event) => {-->
-<!--      //   // gsap.registerPlugin(ScrollTrigger);-->
-<!--      //   gsap.to(".sunflower__wrapper", {-->
-<!--      //     scrollTrigger: ".sunflower__wrapper",-->
-<!--      //     duration:5,-->
-<!--      //     y: "100%",-->
-<!--      //-->
-<!--      //   });-->
-<!--      //-->
-<!--      // });-->
+    <!--      // document.addEventListener("DOMContentLoaded", (event) => {-->
+    <!--      //   // gsap.registerPlugin(ScrollTrigger);-->
+    <!--      //   gsap.to(".sunflower__wrapper", {-->
+    <!--      //     scrollTrigger: ".sunflower__wrapper",-->
+    <!--      //     duration:5,-->
+    <!--      //     y: "100%",-->
+    <!--      //-->
+    <!--      //   });-->
+    <!--      //-->
+    <!--      // });-->
 
 
 
-<!--    </script>-->
+    <!--    </script>-->
 
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 </body>
 
