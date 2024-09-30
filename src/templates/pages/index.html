@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/index.css">
@@ -183,7 +184,7 @@
             <img src="/images/source/img-cap10.png" alt="" id="image-cap10" class="img-cap">
             <img src="/images/source/img-cap11.png" alt="" id="image-cap11" class="img-cap">
             <img src="/images/source/img-cap12.png" alt="" id="image-cap12" class="img-cap">
-            <span class="flare"></span>
+<!--            <span class="flare"></span>-->
             <div class="container_big container_big-savings">
                 <!-- <img src="/images/source/savings-oil.svg" alt="Капли масла" class="savings-oil"> -->
                 <p class="savings__text text-yellow" style="font-size: 50px;">до <span style="font-size: 180px;">15–17
@@ -288,11 +289,12 @@
             <img src="/images/source/sunflower-11.png" alt="" class="sunflower-11">
             <img src="/images/source/sunflower-12.png" alt="" class="sunflower-12">
             <img src="/images/source/sunflower-13.png" alt="" class="sunflower-13">
-            <div class="container">
-                <!--                <img src="/images/source/oilman-3.png" alt="Человек масло" class="oil-man_second-img">-->
-                <img src="/images/source/oilman_gif Serious Animation.gif" alt="Человек масло"
+            <div class="container container-oil-gif">
+
+                <img src="/images/source/oilman_gifSeriousAnimation.gif" alt="Человек масло"
                     class="oil-man_second-img">
                 <img src="/images/source/logo-transparent.svg" alt="Логотип" class="oil-man__logo_second">
+                <img src="/images/source/oil-gif-design.png" alt="" class="oil-gif-design">
             </div>
         </section>
         <section class="classification">
@@ -600,9 +602,14 @@
             </div>
         </section>
         <section class="base" style="position: relative;overflow: hidden">
-            <video autoplay width="100%" loop
-                src="/videos/stock-footage-super-slow-motion-shot-of-waving-golden-liquid-background-at-fps.webm"
-                style="position: absolute;top:-600px;left: 0;" class="super-slow"></video>
+            <video autoplay loop muted class="super-slow super-slow-video">
+                <source src="/videos/oil-video.mp4" type="video/mp4">
+            </video>
+
+            <div class="desig-gradient"></div>
+<!--            <video autoplay width="100%" loop-->
+<!--                src="/videos/oil-video.mov"-->
+<!--                style="position: absolute;top:-600px;left: 0;" class="super-slow"></video>-->
             <div class="container" style="position: relative;z-index: 8000">
                 <div class="base__container_flex">
                     <div class="base__text">
@@ -1060,7 +1067,7 @@
                 </div>
             </div>
         </section>
-        <section class="fat background-green">
+        <section class="fat background-green" id="green-counter">
             <div class="container">
                 <h1 class="fat__title tetx-white"><span class="text-yellow">Впитываемость жира</span> у большинства <br>
                     видов продукции составляет</h1>
@@ -1070,7 +1077,7 @@
                             <img src="/images/source/fat-card1.svg" alt="" class="fat__card-img">
                         </div>
                         <div class="fat__card-content">
-                            <p class="fat__card-number text-yellow">33-38%</p>
+                            <p class="fat__card-number text-yellow"><span class="counter-scroll">33</span>-<span class="counter-scroll">38</span>%</p>
                             <p class="fat__card-desc tetx-white">Картофельные чипсы</p>
                         </div>
                     </div>
@@ -1079,7 +1086,7 @@
                             <img src="/images/source/fat-card1.svg" alt="" class="fat__card-img">
                         </div>
                         <div class="fat__card-content">
-                            <p class="fat__card-number text-yellow">20-25%</p>
+                            <p class="fat__card-number text-yellow"><span class="counter-scroll">20</span>-<span class="counter-scroll">25</span>%</p>
                             <p class="fat__card-desc tetx-white">Пончики</p>
                         </div>
                     </div>
@@ -1088,7 +1095,7 @@
                             <img src="/images/source/fat-card1.svg" alt="" class="fat__card-img">
                         </div>
                         <div class="fat__card-content">
-                            <p class="fat__card-number text-yellow">10-15%</p>
+                            <p class="fat__card-number text-yellow"><span class="counter-scroll">10</span>-<span class="counter-scroll">15</span>%</p>
                             <p class="fat__card-desc tetx-white">Картофель фри</p>
                         </div>
                     </div>
@@ -1097,7 +1104,7 @@
                             <img src="/images/source/fat-card1.svg" alt="" class="fat__card-img">
                         </div>
                         <div class="fat__card-content">
-                            <p class="fat__card-number text-yellow">10%</p>
+                            <p class="fat__card-number text-yellow"><span class="counter-scroll">10</span>%</p>
                             <p class="fat__card-desc tetx-white">Курица (без кожи)</p>
                         </div>
                     </div>
@@ -1106,7 +1113,7 @@
                             <img src="/images/source/fat-card1.svg" alt="" class="fat__card-img">
                         </div>
                         <div class="fat__card-content">
-                            <p class="fat__card-number text-yellow">10%</p>
+                            <p class="fat__card-number text-yellow"><span class="counter-scroll">10</span>%</p>
                             <p class="fat__card-desc tetx-white">Курица (без кожи)</p>
                         </div>
                     </div>
@@ -1115,7 +1122,7 @@
                             <img src="/images/source/fat-card1.svg" alt="" class="fat__card-img">
                         </div>
                         <div class="fat__card-content">
-                            <p class="fat__card-number text-yellow">15%</p>
+                            <p class="fat__card-number text-yellow"><span class="counter-scroll">15</span>%</p>
                             <p class="fat__card-desc tetx-white">Обжаренная рыба</p>
                         </div>
                     </div>
@@ -1318,10 +1325,11 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/comfort.js"></script>
-    <script src="js/counter.js"></script>
-    <script src="js/enemies.js"></script>
+<!--    <script src="js/swiper.js"></script>-->
+<!--    <script src="js/comfort.js"></script>-->
+<!--    <script src="js/counter.js"></script>-->
+<!--    <script src="js/enemies.js"></script>-->
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const backgroundImage = document.querySelector('.savings-bg');
@@ -1363,6 +1371,7 @@
     <script>
         AOS.init();
     </script>
+
 </body>
 
 </html>
