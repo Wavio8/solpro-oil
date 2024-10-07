@@ -27,8 +27,8 @@ const counterFn = () => {
   function animateCounterAll(elements, start,duration) {
     elements.forEach((element) => {
       let startTime = null;
-      let end = parseInt(element.textContent, 10) || 0;
-      console.log(start);
+      let end = parseInt(element.getAttribute("data-counter"), 10) || 0;
+
       function updateCounter(currentTime) {
         if (startTime === null) {
           startTime = currentTime;
@@ -51,17 +51,30 @@ const counterFn = () => {
     const section = document.getElementById("counter-section");
 
     const sectionTop = section.getBoundingClientRect().top;
+    const sectionBottom = section.getBoundingClientRect().bottom;
     const sectionGreen = document.getElementById("green-counter");
     const sectionGreenTop = sectionGreen.getBoundingClientRect().top;
+    const sectionGreenBottom = sectionGreen.getBoundingClientRect().bottom;
 
     if (sectionTop < window.innerHeight && !hasStarted) {
       hasStarted = true;
       animateCounter(document.getElementById("counter"), 0, targetNumber,2000);
     }
+    if (sectionBottom <0) {
+      hasStarted = false;
+    }
+    if (sectionTop > window.innerHeight) {
+      hasStarted = false;
+    }
     if (sectionGreenTop < window.innerHeight && !hasStartedGreen) {
-      // hasStarted = true;
       hasStartedGreen = true;
       animateCounterAll(document.querySelectorAll(".counter-scroll"), 0,1000);
+    }
+    if (sectionGreenBottom <0) {
+      hasStartedGreen = false;
+    }
+    if (sectionGreenTop > window.innerHeight) {
+      hasStartedGreen = false;
     }
   });
 
