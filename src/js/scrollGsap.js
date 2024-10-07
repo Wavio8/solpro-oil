@@ -1,19 +1,43 @@
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
 
 const scrollGsap = () => {
+  console.log("test6");
   gsap.registerPlugin(ScrollTrigger);
-  gsap.to(".oil-man__logo-sunflower", {
-    scrollTrigger: {
-      trigger: ".oil-man",
-      start: "-600px top",
-      end: "-300px top",
-      scrub: true,
-      ease: "power2"
-    },
-    duration: 5,
-    y: "-640px",
+  let mm = gsap.matchMedia();
 
+  mm.add("(min-width: 1100px)", () => {
+    gsap.to(".oil-man__logo-sunflower", {
+
+      scrollTrigger: {
+        trigger: ".oil-man",
+        start: "-600px top",
+        end: "-300px top",
+        scrub: 2,
+        ease: "power2"
+      },
+      duration: 10,
+      y: "-640px",
+
+    });
   });
+
+  mm.add("(max-width: 1099px)", () => {
+    gsap.to(".sunflower__wrapper", {
+      scrollTrigger: {
+        trigger: ".oil-man",
+        start: "-600px top",
+        end: "-300px top",
+        scrub: true,
+        ease: "power2"
+      },
+      duration: 5,
+      y: "0",
+    });
+  });
+
   gsap.to("#image-cap1", {
     scrollTrigger: {
       trigger: ".savings",

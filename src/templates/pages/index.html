@@ -5,18 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/images/source/logo_green.svg" sizes="16x16">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/index.css">
     <title>Solpro</title>
+    <!-- <link href="css/app.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -33,37 +25,46 @@
 
                 <nav class="menu__container">
 
-                    <img src="/images/source/logo_white.svg" alt="Логотип" class="menu__logo">
+                    <img src="/images/source/logo_white.svg" alt="Логотип" class="menu__logo" loading="lazy">
                     <ul class="menu__wrapper">
-                        <li class="menu__item"><a href="" class="menu__link tetx-white">О нас</a></li>
-                        <li class="menu__item"><a href="" class="menu__link tetx-white">Показатели</a></li>
-                        <li class="menu__item"><a href="" class="menu__link tetx-white">Применение</a></li>
+                        <li class="menu__item"><a href="#section-adout" class="menu__link tetx-white">О нас</a></li>
+                        <li class="menu__item"><a href="#section-indicators"
+                                class="menu__link tetx-white">Преимущества</a></li>
+                        <li class="menu__item"><a href="#section-application"
+                                class="menu__link tetx-white">Применение</a></li>
                         <li class="menu__item"><a href="" class="menu__link tetx-white">Ассортимент</a></li>
-                        <li class="menu__item"><a href="" class="menu__link tetx-white">Контакты</a></li>
+                        <li class="menu__item"><a href="" class="menu__link tetx-white">Презентация</a></li>
+                        <li class="menu__item"><a href="" class="menu__link tetx-white">Каталог</a></li>
+                        <li class="menu__item"><a href="https://www.solpro.ru/kontakty/"
+                                class="menu__link tetx-white">Контакты</a></li>
                         <div class="footer__wrapper-social menu-el_adapt">
                             <p class="footer__social-desc">Горячая линия:</p>
                             <a href="tel:+79995557768" class="footer__social-tel">+7 (999) 555-77-68</a>
-                            <div class="social__wrapper">
-                                <a href="../src/images/source/vk-oil.svg" class="social__wrapper-icon">
-                                    <img src="" alt="" class="rules__link-img">
+                            <div class="social__wrapper social__wrapper_menu">
+                                <a href="#" class="social__wrapper-icon">
+                                    <img src="/images/source/vk-oil.svg" alt="" class="rules__link-img" loading="lazy">
                                 </a>
-                                <a href="./images/source/tg-oil.svg" class="social__wrapper-icon">
-                                    <img src="" alt="" class="rules__link-img">
+                                <a href="#" class="social__wrapper-icon">
+                                    <img src="/images/source/tg-oil.svg" alt="" class="rules__link-img" loading="lazy">
                                 </a>
-                                <a href="/src/images/source/wa-oil.svg" class="social__wrapper-icon">
-                                    <img src="" alt="" class="rules__link-img">
+                                <a href="#" class="social__wrapper-icon">
+                                    <img src="/images/source/wa-oil.svg" alt="" class="rules__link-img" loading="lazy">
                                 </a>
                             </div>
-                            <button
-                                class="menu__btn progect__btn tetx-white hadow__btn_bottom menu__btn_adapt-menu">Оставить
-                                заявку</button>
+                            <a href="https://www.solpro.ru/" class="menu__btn_link">
+                                <button
+                                    class="menu__btn progect__btn tetx-white hadow__btn_bottom menu__btn_adapt-menu">Оставить
+                                    заявку</button>
+                            </a>
                             <a href="" class="rules__link rules__link_adapt-menu">© 2024 ООО «Solpro». Все права
                                 защищены</a>
                         </div>
                     </ul>
                     <div class="menu__container_flex">
-                        <a href="" class="menu__link_phone tetx-white">+7 (920) 008-90-90</a>
-                        <button class="menu__btn progect__btn tetx-white hadow__btn_bottom">Оставить заявку</button>
+                        <a href="" class="menu__link_phone tetx-white">+7 (999) 555-77-68</a>
+                        <a href="https://www.solpro.ru/" class="menu__btn_link">
+                            <button class="menu__btn progect__btn tetx-white hadow__btn_bottom">Оставить заявку</button>
+                        </a>
                     </div>
                 </nav>
                 <h1 class="menu__title text-yellow">Профессиональные <br><span
@@ -108,7 +109,7 @@
             <section class="prewiev">
                 <div class="container">
                     <div class="prewiev__wrapper">
-                        <img src="/images/source/logo_green.svg" alt="Логотип" class="prewiev__logo">
+                        <img src="/images/source/logo_green.svg" alt="Логотип" class="prewiev__logo" loading="lazy">
                         <p class="prewiev__desc text-orange">Наши масла и смеси производятся для:</p>
                         <div class="prewiev__container-flex">
                             <p class="prewiev__item border-10">Промышленного использования</p>
@@ -117,10 +118,9 @@
                     </div>
                 </div>
             </section>
-
         </section>
         <div class="container">
-            <section class="bottle border-10 background-green">
+            <section class="bottle border-10 background-green" id="section-indicators">
                 <div class="bottle__flex-adapt">
                     <div class="bottle__card tetx-white">
                         <p class="bottle__card-text">Устойчиво к высоким температурам и окислению</p>
@@ -144,7 +144,7 @@
             </section>
         </div>
         <section class="advantage">
-            <img src="/images/source/oil-img2.png" alt="" class="oil-advantage">
+            <img src="/images/source/oil-img2.png" alt="" class="oil-advantage" loading="lazy">
             <div class="container">
                 <div class="advantage__container_flex">
                     <h2 class="advantage__title">Благодаря уникальному по своей стойкости уровню пищевой ценности
@@ -165,28 +165,28 @@
                     </div>
                 </div>
             </div>
-            <img src="/images/source/sunflower-1.png" alt="" class="sunflower-1">
-            <img src="/images/source/sunflower-2.png" alt="" class="sunflower-2">
-            <img src="/images/source/sunflower-3.png" alt="" class="sunflower-3">
+            <img src="/images/source/sunflower-1.png" alt="" class="sunflower-1" loading="lazy">
+            <img src="/images/source/sunflower-2.png" alt="" class="sunflower-2" loading="lazy">
+            <img src="/images/source/sunflower-3.png" alt="" class="sunflower-3" loading="lazy">
         </section>
 
         <section class="savings">
-            <img src="/images/source/waveOil1.png" alt="" class="savings-bg">
-            <img src="/images/source/image-cap1.png" alt="" id="image-cap1" class="img-cap">
-            <img src="/images/source/image-cap2.png" alt="" id="image-cap2" class="img-cap">
-            <img src="/images/source/img-cap3.png" alt="" id="image-cap3" class="img-cap">
-            <img src="/images/source/img-cap4.png" alt="" id="image-cap4" class="img-cap">
-            <img src="/images/source/img-cap5.png" alt="" id="image-cap5" class="img-cap">
-            <img src="/images/source/img-cap6.png" alt="" id="image-cap6" class="img-cap">
-            <img src="/images/source/img-cap7.png" alt="" id="image-cap7" class="img-cap">
-            <img src="/images/source/img-cap8.png" alt="" id="image-cap8" class="img-cap">
-            <img src="/images/source/img-cap9.png" alt="" id="image-cap9" class="img-cap">
-            <img src="/images/source/img-cap10.png" alt="" id="image-cap10" class="img-cap">
-            <img src="/images/source/img-cap11.png" alt="" id="image-cap11" class="img-cap">
-            <img src="/images/source/img-cap12.png" alt="" id="image-cap12" class="img-cap">
-<!--            <span class="flare"></span>-->
-            <div class="container_big container_big-savings">
-                <!-- <img src="/images/source/savings-oil.svg" alt="Капли масла" class="savings-oil"> -->
+            <img src="/images/source/waveOil1.png" alt="" class="savings-bg" loading="lazy">
+            <img src="/images/source/image-cap1.png" alt="" id="image-cap1" class="img-cap" loading="lazy">
+            <img src="/images/source/image-cap2.png" alt="" id="image-cap2" class="img-cap" loading="lazy">
+            <img src="/images/source/img-cap3.png" alt="" id="image-cap3" class="img-cap" loading="lazy">
+            <img src="/images/source/img-cap4.png" alt="" id="image-cap4" class="img-cap" loading="lazy">
+            <img src="/images/source/img-cap5.png" alt="" id="image-cap5" class="img-cap" loading="lazy">
+            <img src="/images/source/img-cap6.png" alt="" id="image-cap6" class="img-cap" loading="lazy">
+            <img src="/images/source/img-cap7.png" alt="" id="image-cap7" class="img-cap" loading="lazy">
+            <img src="/images/source/img-cap8.png" alt="" id="image-cap8" class="img-cap" loading="lazy">
+            <img src="/images/source/img-cap9.png" alt="" id="image-cap9" class="img-cap" loading="lazy">
+            <img src="/images/source/img-cap10.png" alt="" id="image-cap10" class="img-cap" loading="lazy">
+            <img src="/images/source/img-cap11.png" alt="" id="image-cap11" class="img-cap" loading="lazy">
+            <img src="/images/source/img-cap12.png" alt="" id="image-cap12" class="img-cap" loading="lazy">
+
+            <div class="container">
+
                 <p class="savings__text text-yellow" style="font-size: 50px;">до <span style="font-size: 180px;">15–17
                         %</span></p>
                 <p class="savings__desc text-green"><span style="font-weight: 700;">Экономия</span> на масле в неделю
@@ -195,8 +195,8 @@
                     ассортимент</button>
             </div>
         </section>
-        <section class="rusagro_first">
-            <div class="container">
+        <section class="rusagro_first" id="section-adout">
+            <div class="container text__container">
                 <h2 class="rusagro__title"> <span class="text-orange">«Русагро»</span> советует подходить к выбору
                     фритюрной <br> смеси очень тщательно, учитывать специфику <br> и технологию производства
                     обжариваемого
@@ -205,19 +205,23 @@
                     помогут подобрать смесь, которая оптимально подойдет для любого конкретного изделия.</p>
                 <div class="rusagro__container_flex_first">
                     <button class="menu__btn progect__btn tetx-white hadow__btn_bottom">Посмотреть ассортимент</button>
-                    <button class="menu__btn progect__btn tetx-white hadow__btn_bottom">Написать в «Русагро»</button>
+                    <a href="https://www.solpro.ru/" class="rusagro__link">
+                        <button class="menu__btn progect__btn tetx-white hadow__btn_bottom">Написать в
+                            «Русагро»</button>
+                    </a>
                 </div>
             </div>
         </section>
         <section class="heands"></section>
         <section class="oil-man">
             <div class="sunflower__wrapper">
-                <img src="/images/source/oil-man__logo1.png" alt="Логотип"
-                    class="oil-man__logo oil-man__logo-sunflower">
-                <img src="/images/source/sunflower-4.png" alt="" class="sunflower-4">
-                <img src="/images/source/sunflower-5.png" alt="" class="sunflower-5">
+                <img src="/images/source/oil-man__logo1.png" alt="Логотип" class="oil-man__logo oil-man__logo-sunflower"
+                    loading="lazy">
+                <img src="/images/source/sunflower-4.png" alt="" class="sunflower-4" loading="lazy">
+                <img src="/images/source/sunflower-5.png" alt="" class="sunflower-5" loading="lazy">
             </div>
-            <img src="/images/source/oil-man__img2.png" alt="Логотип" class="oil-man__img">
+            <img src="/images/source/oil-man__img2.png" alt="Логотип" class="oil-man__img" loading="lazy">
+            <img src="/images/source/solpro-man__adapt.svg" alt="Логотип" class="oil-man__img_adapt" loading="lazy">
             <div class="container">
                 <div class="oil-man__wrapper background-green">
                     <div class="oil-man__desc_wrapper">
@@ -234,38 +238,48 @@
             </div>
         </section>
         <section class="fryer-oil">
-            <img src="/images/source/sunflower-6.png" alt="" class="sunflover-6">
-            <img src="/images/source/sunflower-7.png" alt="" class="sunflover-7">
+            <img src="/images/source/sunflower-6.png" alt="" class="sunflover-6" loading="lazy">
+            <img src="/images/source/sunflower-7.png" alt="" class="sunflover-7" loading="lazy">
             <div class="container">
                 <div class="fryer-oil__conteiner_flex">
-                    <h2 class="fryer-oil__title">ФРИТЮРНЫЕ <br> <span class="text-orange">МАСЛА И СМЕСИ</span></h2>
+                    <h2 class="fryer-oil__title">ФРИТЮРНЫЕ <span class="text-orange">МАСЛА И СМЕСИ</span></h2>
                 </div>
+            </div>
 
-                <div class="container">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="/images/source/slider-img.png" alt="Фотография с производства"
-                                    class="swiper-slide-img_my border-10">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/source/slider-img.png" alt="Фотография с производства"
-                                    class="swiper-slide-img_my border-10">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/source/slider-img.png" alt="Фотография с производства"
-                                    class="swiper-slide-img_my border-10">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/images/source/slider-img.png" alt="Фотография с производства"
-                                    class="swiper-slide-img_my border-10">
-                            </div>
+            <div class="container mySwiper__container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/images/source/splide-norm1.png" alt="Фотография с производства"
+                                class="swiper-slide-img_my border-10" loading="lazy">
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-slide">
+                            <img src="/images/source/splide-norm2.png" alt="Фотография с производства"
+                                class="swiper-slide-img_my border-10" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/source/splide-norm3.png" alt="Фотография с производства"
+                                class="swiper-slide-img_my border-10" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/source/splide-norm4.png" alt="Фотография с производства"
+                                class="swiper-slide-img_my border-10" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/source/splide-norm5.png" alt="Фотография с производства"
+                                class="swiper-slide-img_my border-10" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/source/splide-norm6.png" alt="Фотография с производства"
+                                class="swiper-slide-img_my border-10" loading="lazy">
+                        </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
+            </div>
 
+            <div class="container text__container">
                 <div class="fryer-oil__container_grid">
                     <p class="fryer-oil__tetx">Масла, жиры и смеси для фритюров Solpro от «Русагро»
                         разработаны специально для жарки и приготовления пищи при высоких температурах.
@@ -283,18 +297,17 @@
             </div>
         </section>
         <section class="oil-man_second">
-            <img src="/images/source/sunflower-8.png" alt="" class="sunflower-8">
-            <img src="/images/source/sunflower-9.png" alt="" class="sunflower-9">
-            <img src="/images/source/sunflower-10.png" alt="" class="sunflower-10">
-            <img src="/images/source/sunflower-11.png" alt="" class="sunflower-11">
-            <img src="/images/source/sunflower-12.png" alt="" class="sunflower-12">
-            <img src="/images/source/sunflower-13.png" alt="" class="sunflower-13">
+            <img src="/images/source/sunflower-8.png" alt="" class="sunflower-8" loading="lazy">
+            <img src="/images/source/sunflower-9.png" alt="" class="sunflower-9" loading="lazy">
+            <img src="/images/source/sunflower-10.png" alt="" class="sunflower-10" loading="lazy">
+            <img src="/images/source/sunflower-11.png" alt="" class="sunflower-11" loading="lazy">
+            <img src="/images/source/sunflower-12.png" alt="" class="sunflower-12" loading="lazy">
+            <img src="/images/source/sunflower-13.png" alt="" class="sunflower-13" loading="lazy">
             <div class="container container-oil-gif">
-
-                <img src="/images/source/oilman_gifSeriousAnimation.gif" alt="Человек масло"
-                    class="oil-man_second-img">
-                <img src="/images/source/logo-transparent.svg" alt="Логотип" class="oil-man__logo_second">
-                <img src="/images/source/oil-gif-design.png" alt="" class="oil-gif-design">
+                <img src="/images/source/gif-man.gif" alt="Человек масло" class="oil-man_second-img" loading="lazy">
+                <img src="/images/source/logo-transparent.svg" alt="Логотип" class="oil-man__logo_second"
+                    loading="lazy">
+                <img src="/images/source/oil-gif-design.png" alt="" class="oil-gif-design" loading="lazy">
             </div>
         </section>
         <section class="classification">
@@ -315,33 +328,31 @@
                     <div class="classification__card">
                         <div class="classification__namber text-green">2</div>
                         <div class="classification__text">
-                            <p class="classification__item">По видам обжариваемых продуктов</p>
-                            <p class="classification__desc">снеки, par-fry, наггетсы, картофель фри, мучные изделия и т.
-                                д.</p>
+                            <p class="classification__item">По составу</p>
+                            <p class="classification__desc">Могут быть
+                                с функциональными добавками и без</p>
                         </div>
                     </div>
                     <div class="classification__card">
                         <div class="classification__namber text-green">3</div>
                         <div class="classification__text">
-                            <p class="classification__item">По видам обжариваемых продуктов</p>
-                            <p class="classification__desc">снеки, par-fry, наггетсы, картофель фри, мучные изделия и т.
-                                д.</p>
+                            <p class="classification__item">По предназначению</p>
+                            <p class="classification__desc">Промышленная обжарка или обжарка готовых блюд на
+                                предприятиях общественного питания HoReCa</p>
                         </div>
                     </div>
                     <div class="classification__card">
                         <div class="classification__namber text-green">4</div>
                         <div class="classification__text">
-                            <p class="classification__item">По видам обжариваемых продуктов</p>
-                            <p class="classification__desc">снеки, par-fry, наггетсы, картофель фри, мучные изделия и т.
-                                д.</p>
+                            <p class="classification__item">По композиции масел</p>
+                            <p class="classification__desc">Моно- и многокомпонентные смеси</p>
                         </div>
                     </div>
                     <div class="classification__card">
                         <div class="classification__namber text-green">5</div>
                         <div class="classification__text">
-                            <p class="classification__item">По видам обжариваемых продуктов</p>
-                            <p class="classification__desc">снеки, par-fry, наггетсы, картофель фри, мучные изделия и т.
-                                д.</p>
+                            <p class="classification__item">По консистенции</p>
+                            <p class="classification__desc">Твердые, полутвердые и жидкие смеси</p>
                         </div>
                     </div>
                 </div>
@@ -349,26 +360,28 @@
         </section>
 
         <section class="bom">
-            <img src="/images/source/drop-oil.png" alt="Капля" class="drop-oil">
-            <img src="/images/source/sunflower-14.png" alt="" class="sunflower-14">
-            <img src="/images/source/sunflower-15.png" alt="" class="sunflower-15">
-            <img src="/images/source/sunflower-16.png" alt="" class="sunflower-16">
+            <img src="/images/source/drop-oil.png" alt="Капля" class="drop-oil" loading="lazy">
+            <img src="/images/source/sunflower-14.png" alt="" class="sunflower-14" loading="lazy">
+            <img src="/images/source/sunflower-15.png" alt="" class="sunflower-15" loading="lazy">
+            <img src="/images/source/sunflower-16.png" alt="" class="sunflower-16" loading="lazy">
             <div class="container">
                 <div class="bom__container_flex">
                     <div class="bom__tetx-wrapper">
                         <h2 class="bom__sub-title text-gray" style="text-transform: uppercase;">ЧТО ВЫ ЗНАЕТЕ ПРО <span
                                 class="text-orange">ВОМ</span>?</h2>
-                        <p class="bom__desc"> <span
-                                style="font-weight: 700;">Высокоолеиновое подсолнечное масло (ВОМ)</span>
+                        <p class="bom__desc"> <span style="font-weight: 700;">Высокоолеиновое подсолнечное масло
+                                (BOM)</span>
                             представляет собой масло, полученное из специальных сортов подсолнечника. <br><br> Высокое
                             содержание олеиновой кислоты (не менее 75 %) обеспечивает более высокую окислительную
                             стабильность по сравнению с обычным подсолнечным маслом. По своим свойствам и составу масло
                             идентично оливковому, а по некоторым полезным параметрам даже превосходит его!</p>
-                        <button class="progect__btn bom__btn tetx-white">Посмотреть видеопрезентацию</button>
+                        <a href="https://rutube.ru/video/66f4c4b6b62e147542ae4c98013e6acf/" class="video-present">
+                            <button class="progect__btn bom__btn tetx-white">Посмотреть видеопрезентацию</button>
+                        </a>
                     </div>
                 </div>
                 <div class="bom__green border-10 background-green">
-                    <img src="/images/source/drop-oil.png" alt="Капля" class="drop-oil_adapt">
+                    <img src="/images/source/drop-oil.png" alt="Капля" class="drop-oil_adapt" loading="lazy">
                     <h2 class="bom__green-title tetx-white uppercase"><span class="text-yellow">ВОМ</span> обладает
                         необходимыми
                         свойствами для обеспечения должного качества фритюрных смесей</h2>
@@ -403,7 +416,7 @@
             </div>
         </section>
         <section class="criteria">
-            <div class="container">
+            <div class="container text__container">
                 <div class="criteria__container_flex">
                     <div class="criteria__text-wrapper">
                         <h2 class="criteria__title uppercase text-gray">КЛЮЧЕВЫЕ ПОКАЗАТЕЛИ <br> ПРИ ВЫБОРЕ МАСЛА <br>
@@ -416,9 +429,9 @@
                             при которой масло активно окисляется и выделяет летучие вещества в виде синеватого дыма.
                             Такие масла теряют все свои полезные свойства при нагревании.
                             Чем лучше очищен продукт, тем выше его точка дымления.
-                            <img src="/images/source/sunflower-17.png" alt="" class="sunflower-17">
-                            <img src="/images/source/sunflower-18.png" alt="" class="sunflower-18">
-                            <img src="/images/source/sunflower-19.png" alt="" class="sunflower-19">
+                            <img src="/images/source/sunflower-17.png" alt="" class="sunflower-17" loading="lazy">
+                            <img src="/images/source/sunflower-18.png" alt="" class="sunflower-18" loading="lazy">
+                            <img src="/images/source/sunflower-19.png" alt="" class="sunflower-19" loading="lazy">
                         </p>
                     </div>
                     <div class="criteria__content-wrapper">
@@ -455,79 +468,80 @@
                                 кислоты.
                             </p>
                         </div>
-                        <img src="/images/source/stability__logo-oil.png" alt="Логотип" class="stability__logo">
+                        <img src="/images/source/stability__logo-oil.png" alt="Логотип" class="stability__logo"
+                            loading="lazy">
+                    </div>
+
+                    <!-- </div> -->
+                    <div class="container container_stability__items">
+                        <div class="stability__list">
+                            <ul class="stability__items">
+                                <li class="stability__item ">
+                                    <p class="stability__item-desc">Высокостеариновое подсолнечное масло</p>
+                                    <div class="stability__item-progress"></div>
+                                    <p class="stability__item-number">33</p>
+                                </li>
+                                <li class="stability__item">
+                                    <p class="stability__item-desc">Пальмовый олеин</p>
+                                    <div class="stability__item-progress"></div>
+                                    <p class="stability__item-number">25</p>
+                                </li>
+                                <li class="stability__item stability__item_note">
+                                    <p class="stability__item-desc ">Высокоолеиновое
+                                        подсолнечное масло</p>
+                                    <div class="stability__item-progress glare-button"></div>
+                                    <p class="stability__item-number">20</p>
+                                </li>
+                                <li class="stability__item">
+                                    <p class="stability__item-desc">Высокоолеиновое рапсовое масло</p>
+                                    <div class="stability__item-progress"></div>
+                                    <p class="stability__item-number">15</p>
+                                </li>
+                                <li class="stability__item">
+                                    <p class="stability__item-desc">Среднеолеиновое
+                                        подсолнечное масло</p>
+                                    <div class="stability__item-progress"></div>
+                                    <p class="stability__item-number">12,5</p>
+                                </li>
+                                <li class="stability__item">
+                                    <p class="stability__item-desc">Рапсовое масло</p>
+                                    <div class="stability__item-progress"></div>
+                                    <p class="stability__item-number">8,13</p>
+                                </li>
+                                <li class="stability__item">
+                                    <p class="stability__item-desc">Соевое масло</p>
+                                    <div class="stability__item-progress"></div>
+                                    <p class="stability__item-number">8</p>
+                                </li>
+                                <li class="stability__item">
+                                    <p class="stability__item-desc">Хлопковое масло</p>
+                                    <div class="stability__item-progress"></div>
+                                    <p class="stability__item-number">7</p>
+                                </li>
+                                <li class="stability__item stability__item_note">
+                                    <p class="stability__item-desc text-yellow">Подсолнечное масло</p>
+                                    <div class="stability__item-progress glare-button"></div>
+                                    <p class="stability__item-number">6</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="container container_stability__items">
-                <div class="stability__list">
-                    <ul class="stability__items">
-                        <li class="stability__item ">
-                            <p class="stability__item-desc">Высокостеариновое подсолнечное масло</p>
-                            <div class="stability__item-progress"></div>
-                            <p class="stability__item-number">33</p>
-                        </li>
-                        <li class="stability__item">
-                            <p class="stability__item-desc">Пальмовый олеин</p>
-                            <div class="stability__item-progress"></div>
-                            <p class="stability__item-number">25</p>
-                        </li>
-                        <li class="stability__item stability__item_note">
-                            <p class="stability__item-desc ">Высокоолеиновое
-                                подсолнечное масло</p>
-                            <div class="stability__item-progress glare-button"></div>
-                            <p class="stability__item-number">20</p>
-                        </li>
-                        <li class="stability__item">
-                            <p class="stability__item-desc">Высокоолеиновое рапсовое масло</p>
-                            <div class="stability__item-progress"></div>
-                            <p class="stability__item-number">15</p>
-                        </li>
-                        <li class="stability__item">
-                            <p class="stability__item-desc">Среднеолеиновое
-                                подсолнечное масло</p>
-                            <div class="stability__item-progress"></div>
-                            <p class="stability__item-number">12,5</p>
-                        </li>
-                        <li class="stability__item">
-                            <p class="stability__item-desc">Рапсовое масло</p>
-                            <div class="stability__item-progress"></div>
-                            <p class="stability__item-number">8,13</p>
-                        </li>
-                        <li class="stability__item">
-                            <p class="stability__item-desc">Соевое масло</p>
-                            <div class="stability__item-progress"></div>
-                            <p class="stability__item-number">8</p>
-                        </li>
-                        <li class="stability__item">
-                            <p class="stability__item-desc">Хлопковое масло</p>
-                            <div class="stability__item-progress"></div>
-                            <p class="stability__item-number">7</p>
-                        </li>
-                        <li class="stability__item stability__item_note">
-                            <p class="stability__item-desc text-yellow">Подсолнечное масло</p>
-                            <div class="stability__item-progress glare-button"></div>
-                            <p class="stability__item-number">6</p>
-                        </li>
-                    </ul>
+                <div class="container">
+                    <img src="/images/source/stability__logo-oil.png" alt="Логотип"
+                        class="stability__logo stability__logo_adapt" loading="lazy">
+                    <p class="stability__note text-yellow" style="font-weight: 700; font-size: 20px;">ВОМ обладает
+                        высокой
+                        стойкостью к дымо- и пенообразованию, процессам потемнения, полимеризации.</p>
+                    <p class="stability__note tetx-white" style="font-weight: 300; font-size: 17px;">Анализ
+                        окислительной
+                        устойчивости (Rancimat) определялся при 120 °С.</p>
                 </div>
-            </div>
-
-            <div class="container">
-                <img src="/images/source/stability__logo-oil.png" alt="Логотип"
-                    class="stability__logo stability__logo_adapt">
-                <p class="stability__note text-yellow" style="font-weight: 700; font-size: 20px;">ВОМ обладает
-                    высокой
-                    стойкостью к дымо- и пенообразованию, процессам потемнения, полимеризации.</p>
-                <p class="stability__note tetx-white" style="font-weight: 300; font-size: 17px;">Анализ
-                    окислительной
-                    устойчивости (Rancimat) определялся при 120 °С.</p>
-            </div>
         </section>
-        <section class="advantages">
-            <img src="/images/source/sunflower-20.png" alt="" class="sunflower-20">
-            <img src="/images/source/sunflower-21.png" alt="" class="sunflower-21">
-            <img src="/images/source/sunflower-22.png" alt="" class="sunflower-22">
+        <section class="advantages" id="section-application">
+            <img src="/images/source/sunflower-20.png" alt="" class="sunflower-20" loading="lazy">
+            <img src="/images/source/sunflower-21.png" alt="" class="sunflower-21" loading="lazy">
+            <img src="/images/source/sunflower-22.png" alt="" class="sunflower-22" loading="lazy">
             <div class="container">
                 <h1 class="advantages__title text-gray" style="text-transform: uppercase;">ПРЕИМУЩЕСТВА <span
                         class="text-orange">ПРИМЕНЕНИЯ</span></h1>
@@ -578,9 +592,11 @@
                         <div class="advantages__card-box">
                             <div class="advantages__card-img-3"></div>
                         </div>
-                        <h2 class="advantages__card-title">Для снеков</h2>
-                        <p class="advantages__card-desc">Снижает случаи прогоркания, тем самым <br> продлевает сроки
-                            хранения.</p>
+                        <h2 class="advantages__card-title">Для обжарки во фритюре</h2>
+                        <ul class="advantages__card-list">
+                            <li class="advantages__card-item">Снижает случаи прогоркания, тем самым продлевает сроки
+                                хранения.</li>
+                        </ul>
                     </div>
                     <div class="advantages__card">
                         <div class="advantages__card-box">
@@ -601,19 +617,18 @@
                 </div>
             </div>
         </section>
-        <section class="base" style="position: relative;overflow: hidden">
-            <video autoplay loop muted class="super-slow super-slow-video">
-                <source src="/videos/oil-video.mp4" type="video/mp4">
-            </video>
-
-            <div class="desig-gradient"></div>
-<!--            <video autoplay width="100%" loop-->
-<!--                src="/videos/oil-video.mov"-->
-<!--                style="position: absolute;top:-600px;left: 0;" class="super-slow"></video>-->
-            <div class="container" style="position: relative;z-index: 8000">
+        <section class="base" style="position: relative;overflow: hidden">|
+            <div class="super-slow-video__wrap">
+                <video autoplay loop muted class="super-slow super-slow-video" data-src="/videos/wio3.mp4">
+                    <source src="/videos/wio3.mp4" type="video/mp4">
+                </video>
+                <div class="desig-gradient"></div>
+            </div>
+            <div class="container text__container" style="position: relative;z-index: 8000">
                 <div class="base__container_flex">
                     <div class="base__text">
-                        <h2 class="base__title text-gray"><span style="font-weight: 700;">Основа смесей для фритюров
+                        <h2 class="base__title text-gray" style="font-weight: 300;"><span
+                                style="font-weight: 700;">Основа смесей для фритюров
                                 —</span>высокоолеиновое подсолнечное масло</h2>
                         <p class="base__desc">Подсолнечное масло олеинового типа (HOSO) очень важно
                             с пищевой и технической точки зрения. ФАО и ВОЗ (Продовольственная и сельскохозяйственная
@@ -624,7 +639,7 @@
                     </div>
                     <div class="base__content border-10">
                         <h2 class="base__content-title text-yellow">BOM</h2>
-                        <p class="base__content-desc text-yellow">Высокоолеиновое подсолнечное масло намного лучше, чем
+                        <p class="base__content-desc text-orange">Высокоолеиновое подсолнечное масло намного лучше, чем
                             обычное подсолнечное масло, подходит для жарки предварительно обжаренных замороженных
                             продуктов.</p>
                     </div>
@@ -632,8 +647,11 @@
             </div>
         </section>
         <section class="base-second">
-            <div class="container">
-                <img src="/images/source/base-img.png" alt="" class="base-img border-10">
+            <div class="base-blur"></div>
+            <div class="container base-img__container">
+                <img src="/images/source/base-img.png" alt="" class="base-img border-10" loading="lazy">
+            </div>
+            <div class="container text__container">
                 <div class="base-second__container-flex">
                     <p class="base-second__des">Фритюрные смеси на основе высокоолеинового масла используют
                         как для обжарки готового продукта, так и для предварительной обжарки полуфабрикатов: картофеля
@@ -642,21 +660,102 @@
                         дальнейшего приготовления
                         на предприятиях общественного питания). Частично обжаренные продукты, как правило,
                         замораживаются сразу после первоначальной обжарки. </p>
-                    <p class="base-second__des">Замораживание дает некоторые первоначальные преимущества перед
-                        продуктами, которые не подвергаются этому процессу, поскольку оно имеет тенденцию снижать
-                        скорость окисления, вызванную жаркой, что может эффективно продлить срок хранения. Надо
-                        учитывать, что замораживание без обжарки не устраняет возможность автоокисления. Более того, ВОМ
-                        намного лучше, чем обычное подсолнечное масло, подходит для жарки предварительно обжаренных
-                        замороженных продуктов.</p>
+                    <p class="base-second__des">Замораживание продуктов снижает скорость окисления, вызванную жаркой,
+                        что может эффективно продлить срок хранения продуктов. Надо учитывать, что замораживание без
+                        обжарки не предотвращает автоокисление. Более того, ВОМ лучше подходит для жарки предварительно
+                        обжаренных замороженных продуктов, чем обычное подсолнечное масло.</p>
                 </div>
-                <p class="base-second__item border-10 text-green">Основные правила поддержания качества фритюрных жиров
-                    на предприятиях общественного питания</p>
-                <p class="base-second__item border-10 text-green">Когда необходимо заменить фритюрный жир</p>
+                <div class="base__green-card" data-base="1">
+                    <p class="base-second__item border-10 text-green">Основные правила поддержания качества фритюрных
+                        жиров
+                        на предприятиях общественного питания</p>
+                    <div class="pop-up__base test" data-box="1">
+                        <img src="/images/source/base-close.svg" alt="Закрыть окно" class="close__base">
+                        <ul class="pop-up__base-text">
+                            Основные правила поддержания качества фритюрных
+                            жиров на предприятиях общественного питания
+                            <li class="pop-up__base-items">Заполненные фритюрницы, не используемые в данный момент,
+                                должны быть выключены и плотно закрыты крышками. </li>
+                            <li class="pop-up__base-items"> При работе фритюрницы уровень жира должен быть выше
+                                отметки Min на стенке ванны. Доливать можно только свежий
+                                фритюрный жир (по стенке ванны). Обычно долив осуществляется
+                                после процесса фильтрования фритюра.</li>
+                            <li class="pop-up__base-items">Нужно ограничить попадание влаги в горячий фритюр: нельзя
+                                загружать мокрый продукт во фритюр, рекомендуется убирать
+                                лишнюю влагу с продуктов. Вытирать поверхности фритюрницы
+                                можно только сухой ветошью.</li>
+                            <li class="pop-up__base-items">Необходимо соблюдать время и температуру жарки (они должны
+                                быть постоянны), температура до и после обжарки должна быть
+                                одинакова, термодатчики должны быть откалиброваны. </li>
+                            <li class="pop-up__base-items">После приготовления продукта необходимо дать жиру полностью
+                                стечь (не менее 10 секунд), держа емкость под углом 45° от себя
+                                и в сторону</li>
+                            <li class="pop-up__base-items">Необходимо периодически тщательно фильтровать фритюрный
+                                жир. Частота фильтрования определяется индивидуально. После
+                                каждого цикла жарки необходимо удалять взвешенные частицы
+                                из фритюрного жира и крошки продуктов со дна фритюрницы. </li>
+                            <li class="pop-up__base-items">Необходимо вести график замены фритюрного жира с указанием
+                                состояния фритюра для каждой ванны ежедневно. </li>
+                            <li class="pop-up__base-items">Фритюрницы необходимо чистить с помощью специальных
+                                моющих средств, на последнем этапе рекомендуется промыть
+                                фритюрную ванну небольшим количеством свежего фритюрного
+                                жира, а затем слить его. На предприятии должен вестись график
+                                чистки фритюрниц, а также график техобслуживания.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="base__green-card" data-base="2">
+                    <p class="base-second__item border-10 text-green">Когда необходимо заменить фритюрный жир</p>
+                    <div class="pop-up__base" data-box="2">
+                        <img src="/images/source/base-close.svg" alt="Закрыть окно" class="close__base">
+                        <ul class="pop-up__base-text">
+                            Фритюрный жир
+                            необходимо заменить,
+                            если:
+                            <li class="pop-up__base-items">он вспенивается
+                                (на краях ванны
+                                появляется маслянистая
+                                пена и долго не исчезает
+                                после загрузки емкости
+                                с сырыми продуктами
+                                во фритюрницу);</li>
+                            <li class="pop-up__base-items">выделяется дым
+                                над поверхностью
+                                фритюрного жира;</li>
+                            <li class="pop-up__base-items">цвет и запах фритюра
+                                не соответствуют
+                                параметрам нормального
+                                масла;</li>
+                            <li class="pop-up__base-items">концентрация свободных
+                                жирных кислот (СЖК —
+                                продукты термического
+                                окисления) превышает
+                                1 % (что определяется
+                                с помощью тест-полосок);
+                            </li>
+                            <li class="pop-up__base-items">изменяются
+                                характеристики готового
+                                продукта (появляются
+                                посторонний привкус,
+                                запах, продукт слишком
+                                светлый/темный, или
+                                на его поверхности
+                                появляются пятна, на вид
+                                слишком жирный/сухой,
+                                по консистенции слишком
+                                мягкий/жесткий).</li>
+
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </section>
         <section class="chips">
             <div class="container">
-                <img src="/images/source/oli-man__logo_transparent.png" alt="Логотип" class="chips__logo">
+                <img src="/images/source/oli-man__logo_transparent.png" alt="Логотип" class="chips__logo"
+                    loading="lazy">
                 <div class="container">
                     <div class="oil-man__wrapper background-green chips">
                         <p class="chips__desc tetx-white"><span class="text-yellow">Картофельные и злаковые (кукурузные)
@@ -664,7 +763,7 @@
                             храниться в течение длительного времени – это могут обеспечить масла с высоким содержанием
                             олеиновой кислоты</p>
                     </div>
-                    <img src="/images/source/chips-img.png" alt="" class="chips-img">
+                    <img src="/images/source/chips-img.png" alt="" class="chips-img" loading="lazy">
                 </div>
             </div>
             <h2 class="moisture-title text-yellow" style="text-transform: uppercase;">«ВРАГИ»</h2>
@@ -883,6 +982,228 @@
                     </div>
 
 
+                    <!-- АДАПТИВНЫЙ POP-UP ДЛЯ ШЕСТЕРЁНОК -->
+                    <div class="wheel__blur"></div>
+                    <!-- POP-UP №1 -->
+                    <div class="wheel__pop-up_wrapper" data-pop-up="1">
+                        <div class="moisture__view moisture__view1" data-card="1">
+                            <img src="/images/source/pop-up__close.svg" alt="Закрыть окно" class="pop-up__close">
+                            <p class="wheel__title">Нагар</p>
+                            <ul class="wheel__list">
+                                Что происходит:
+                                <li class="wheel__item">Масло темнеет</li>
+                            </ul>
+                            <ul class="wheel__list">
+                                Причины:
+                                <li class="wheel__item">Взвесь и крошки от приготовленных продуктов</li>
+                                <li class="wheel__item">Смолянистые отложения на внутренних стенках ванн и
+                                    нагревательных
+                                    элементах</li>
+                            </ul>
+                            <ul class="wheel__list">
+                                Способы предотвращения:
+                                <li class="wheel__item">Чаще удаляйте взвесь и крошки из масла</li>
+                                <li class="wheel__item">Не накладывайте сырые продукты
+                                    непосредственно над фритюрными ваннами</li>
+                                <li class="wheel__item">Ежедневно тщательно фильтруйте масло </li>
+                                <li class="wheel__item">Чистите ванны специальными моющими
+                                    средствами</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- POP-UP №2 -->
+                    <div class="wheel__pop-up_wrapper" data-pop-up="2">
+                        <div class="moisture__view moisture__view2" data-card="2">
+                            <img src="/images/source/pop-up__close.svg" alt="Закрыть окно" class="pop-up__close">
+                            <p class="wheel__title">Моющие
+                                средства</p>
+                            <ul class="wheel__list">
+                                Что происходит:
+                                <li class="wheel__item">Разрушает фритюрное
+                                    масло</li>
+                                <li class="wheel__item">Вызывает потемнение
+                                    масло</li>
+                                <li class="wheel__item">Ведет к потере своих
+                                    свойств и делает его
+                                    непригодным для
+                                    дальнейшего использования</li>
+                            </ul>
+                            <ul class="wheel__list">
+                                Причины:
+                                <li class="wheel__item">Использование мыла или
+                                    универсальных чистящих
+                                    средств, не предназначенных
+                                    для чистки фритюрниц. Попадая
+                                    во фритюр, они играют роль
+                                    эмульгаторов и становятся
+                                    катализатором расщепления
+                                    жира</li>
+                            </ul>
+                            <ul class="wheel__list">
+                                Способы предотвращения:
+                                <li class="wheel__item">ЗАПРЕЩАЕТСЯ использование мыла или
+                                    универсальных чистящих средств </li>
+                                <li class="wheel__item">Использование только специальных
+                                    средств для фритюрниц</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- POP-UP №3 -->
+                    <div class="wheel__pop-up_wrapper" data-pop-up="3">
+                        <div class="moisture__view moisture__view3" data-card="3">
+                            <img src="/images/source/pop-up__close.svg" alt="Закрыть окно" class="pop-up__close">
+                            <p class="wheel__title">Соль /
+                                специи</p>
+                            <ul class="wheel__list">
+                                Что происходит:
+                                <li class="wheel__item">Вызывает потемнение</li>
+                                <li class="wheel__item">Ведет к потере своих
+                                    свойств и делает его
+                                    непригодным для
+                                    дальнейшего использования</li>
+                            </ul>
+                            <ul class="wheel__list">
+                                Причины:
+                                <li class="wheel__item">Неправильная посолка блюд</li>
+                                <li class="wheel__item">Соль и специи выделяются
+                                    из продуктов в процессе
+                                    обжарки</li>
+                            </ul>
+                            <ul class="wheel__list">
+                                Способы предотвращения:
+                                <li class="wheel__item">Правильно выполняйте процедуры
+                                    посолки продуктов </li>
+                                <li class="wheel__item">Тщательно и ежедневно фильтруйте
+                                    масло</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- POP-UP №4 -->
+                    <div class="wheel__pop-up_wrapper" data-pop-up="4">
+                        <div class="moisture__view moisture__view4" data-card="4">
+                            <img src="/images/source/pop-up__close.svg" alt="Закрыть окно" class="pop-up__close">
+                            <p class="wheel__title">Воздух</p>
+                            <ul class="wheel__list">
+                                Что происходит:
+                                <li class="wheel__item">Кислород вступает
+                                    в реакцию с жиром, что
+                                    приводит к его окислению
+                                    и появлению постороннего
+                                    вкуса, цвета, запаха
+                                    и полимеризации</li>
+                            </ul>
+                            <ul class="wheel__list">
+                                Причины:
+                                <li class="wheel__item">Открытая упаковка с маслом </li>
+                                <li class="wheel__item">Неиспользованные ванны
+                                    с маслом не накрыты крышками </li>
+                            </ul>
+                            <ul class="wheel__list">
+                                Способы предотвращения:
+                                <li class="wheel__item">Плотно закрывайте открытые упаковки</li>
+                                <li class="wheel__item">Закрывайте ванны крышками, когда они
+                                    не используются</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- POP-UP №5 -->
+                    <div class="wheel__pop-up_wrapper" data-pop-up="5">
+                        <div class="moisture__view moisture__view5" data-card="5">
+                            <img src="/images/source/pop-up__close.svg" alt="Закрыть окно" class="pop-up__close">
+                            <p class="wheel__title">Холостой
+                                нагрев
+                                фритюра</p>
+                            <ul class="wheel__list">
+                                Что происходит:
+                                <li class="wheel__item">Простое нагревание
+                                    фритюра без жарки
+                                    продуктов приводит
+                                    к разложению фритюрного
+                                    жира</li>
+                            </ul>
+                            <ul class="wheel__list">
+                                Причины:
+                                <li class="wheel__item">При высоких температурах
+                                    реакции распада жиров и масел
+                                    ускоряются</li>
+                            </ul>
+                            <ul class="wheel__list">
+                                Способы предотвращения:
+                                <li class="wheel__item">Необходимо максимально равномерно
+                                    загружать фритюрницу работой, т. к.
+                                    влага, испаряющаяся из обжариваемых
+                                    продуктов, очищает фритюрный жир
+                                    от продуктов разложения, благодаря
+                                    чему жир сохраняет необходимый
+                                    уровень качества дольше</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- POP-UP №6-->
+                    <div class="wheel__pop-up_wrapper" data-pop-up="6">
+                        <div class="moisture__view moisture__view6" data-card="6">
+                            <img src="/images/source/pop-up__close.svg" alt="Закрыть окно" class="pop-up__close">
+                            <p class="wheel__title">Повышенная
+                                температура
+                                обжарки</p>
+                            <ul class="wheel__list">
+                                Что происходит:
+                                <li class="wheel__item">Сокращает срок службы</li>
+                            </ul>
+                            <ul class="wheel__list">
+                                Причины:
+                                <li class="wheel__item">Неправильная установка
+                                    температуры доготовки</li>
+                                <li class="wheel__item">Неправильная калибровка
+                                    температуры</li>
+                                <li class="wheel__item">Неисправные температурные
+                                    датчики</li>
+                            </ul>
+                            <ul class="wheel__list">
+                                Способы предотвращения:
+                                <li class="wheel__item">Правильная установка температуры
+                                    доготовки</li>
+                                <li class="wheel__item">Не накладывайте сырые продукты
+                                    непосредственно над фритюрными ваннами</li>
+                                <li class="wheel__item">Правильная калибровка температуры</li>
+                                <li class="wheel__item">Исправные температурные датчики</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- POP-UP №7 -->
+                    <div class="wheel__pop-up_wrapper" data-pop-up="7">
+                        <div class="moisture__view moisture__view7" data-card="7">
+                            <img src="/images/source/pop-up__close.svg" alt="Закрыть окно" class="pop-up__close">
+                            <p class="wheel__title">Влага</p>
+                            <ul class="wheel__list">
+                                Что происходит:
+                                <li class="wheel__item">Уменьшает
+                                    продолжительность
+                                    использования</li>
+                            </ul>
+                            <ul class="wheel__list">
+                                Причины:
+                                <li class="wheel__item">Выделение воды из продуктов
+                                    во время обжарки</li>
+                                <li class="wheel__item">Загрузка сырых продуктов
+                                    в корзины над ваннами</li>
+                                <li class="wheel__item">Вытирание поверхностей
+                                    фритюрниц мокрой тряпкой</li>
+                                <li class="wheel__item">Использование мокрых корзин</li>
+                            </ul>
+                            <ul class="wheel__list">
+                                Способы предотвращения:
+                                <li class="wheel__item">Не допускайте разморозки продуктов</li>
+                                <li class="wheel__item">Не допускайте попадания воды в ванну
+                                    в процессе чистки фритюрниц </li>
+                                <li class="wheel__item">Перед фильтрацией масла убедитесь
+                                    в том, что фильтровальная машина сухая</li>
+                                <li class="wheel__item">Высушивайте корзины для подготовки
+                                    фритюрного масла после мойки </li>
+                            </ul>
+                        </div>
+                    </div>
                     <!-- ШЕСТЕРЕНКИ ЗДЕСЬ -->
                     <div class="moisture__well__wrapper">
 
@@ -943,8 +1264,9 @@
         <section class="fuming" id="counter-section">
             <div class="container fuming-img__container">
                 <div class="drop__wrapper">
-                    <img src="/images/source/fuming-img.png" alt="Картинка масла" class="fuming-img border-10">
-                    <img src="/images/source/drop-oil.png" alt="Капля" class="fuming__drop">
+                    <img src="/images/source/gif-jast-oil.gif" alt="Картинка масла" class="fuming-img border-10"
+                        loading="lazy">
+                    <img src="/images/source/drop-oil.png" alt="Капля" class="fuming__drop" loading="lazy">
                 </div>
             </div>
             <div class="fuming__container_flex">
@@ -959,41 +1281,40 @@
                 </div>
                 <div class="fuming__content">
                     <p class="fuming__number text-yellow"><span id="counter">265</span> °С</p>
-                    <p class="fuming__number-desc text-yellow">Высокоолеиновое подсолнечное масло рафинированное</p>
+                    <p class="fuming__number-desc text-orange">Высокоолеиновое подсолнечное масло рафинированное</p>
                 </div>
             </div>
 
 
         </section>
         <section class="comparison">
-            <img src="/images/source/sunflower-23.png" alt="" class="sunflower-23">
-            <img src="/images/source/sunflower-24.png" alt="" class="sunflower-24">
-            <img src="/images/source/sunflower-25.png" alt="" class="sunflower-25">
-            <img src="/images/source/sunflower-26.png" alt="" class="sunflower-26">
+            <img src="/images/source/sunflower-23.png" alt="" class="sunflower-23" loading="lazy">
+            <img src="/images/source/sunflower-24.png" alt="" class="sunflower-24" loading="lazy">
+            <img src="/images/source/sunflower-25.png" alt="" class="sunflower-25" loading="lazy">
+            <img src="/images/source/sunflower-26.png" alt="" class="sunflower-26" loading="lazy">
             <div class="container_comparison">
                 <h1 class="comparison__title">Сравнение</h1>
                 <ul class="comparison__list">
-                    <li class="comparison__item border-10 background-green tetx-white">
+                    <li class="comparison__item border-10 background-green_litght tetx-white">
                         <p class="comparison__desc">Вид масла</p>
                         <p class="comparison__number">Точка
                             дымообразования,°С</p>
                     </li>
-
                     <li class="comparison__item border-10 background-yellow text-green">
-                        <p class="comparison__desc"> Высокоолеиновое подсолнечное масло
+                        <p class="comparison__desc">Высокоолеиновое подсолнечное масло
                             рафинированное
                         </p>
-                        <p class="comparison__number"> 265</p>
+                        <p class="comparison__number">265</p>
                     </li>
                     <li class="comparison__item border-10">
                         <p class="comparison__desc">Смесь подсолнечного масла и высокоолеинового
                             с пеногасителем</p>
-                        <p class="comparison__number"> 260</p>
+                        <p class="comparison__number">260</p>
                     </li>
                     <li class="comparison__item border-10 background-blue">
                         <p class="comparison__desc">Смесь подсолнечного масла с высокоолеиновым,
                             рапсовым и пеногасителем</p>
-                        <p class="comparison__number"> 252</p>
+                        <p class="comparison__number">252</p>
                     </li>
                     <li class="comparison__item border-10">
                         <p class="comparison__desc">
@@ -1015,30 +1336,44 @@
                         <p class="comparison__desc">Рапсовое масло рафинированное</p>
                         <p class="comparison__number">230</p>
                     </li>
-                    <li class="comparison__item border-10">
+                    <li class="comparison__item border-10 comparison__item_more">
                         <p class="comparison__desc">
-
+                            Пальмоядровое масло рафинированное</p>
+                        <p class="comparison__number">228</p>
+                    </li>
+                    <li class="comparison__item border-10 background-blue comparison__item_more">
+                        <p class="comparison__desc">
+                            Олеин пальмоядрового масла рафинированный</p>
+                        <p class="comparison__number">226</p>
+                    </li>
+                    <li class="comparison__item border-10 comparison__item_more">
+                        <p class="comparison__desc">
                             Подсолнечное масло рафинированное</p>
                         <p class="comparison__number">221</p>
                     </li>
-                    <li class="comparison__item border-10 background-blue">
+                    <li class="comparison__item border-10 background-blue comparison__item_more">
+                        <p class="comparison__desc">
+                            Пальмоядровое масло нерафинированное</p>
+                        <p class="comparison__number">174</p>
+                    </li>
+                    <li class="comparison__item border-10  comparison__item_more">
                         <p class="comparison__desc">Оливковое масло нерафинированное</p>
                         <p class="comparison__number">161</p>
                     </li>
-                    <li class="comparison__item border-10">
+                    <li class="comparison__item border-10 background-blue comparison__item_more">
                         <p class="comparison__desc">
                             Высокоолеиновое подсолнечное масло
                             нерафинированное
                         </p>
                         <p class="comparison__number">160</p>
                     </li>
-                    <li class="comparison__item border-10 background-blue">
+                    <li class="comparison__item border-10  comparison__item_more">
                         <p class="comparison__desc">
                             Пальмовое масло нерафинированное
                         </p>
                         <p class="comparison__number">123</p>
                     </li>
-                    <li class="comparison__item border-10">
+                    <li class="comparison__item border-10 background-blue comparison__item_more">
                         <p class="comparison__desc">
                             Подсолнечное масло нерафинированное</p>
                         <p class="comparison__number">107</p>
@@ -1046,24 +1381,31 @@
                 </ul>
                 <button class="progect__btn comparison__btn tetx-white ">Показать ещё</button>
             </div>
-            <img src="/images/source/sunflower-27.png" alt="" class="sunflower-27">
-            <img src="/images/source/sunflower-28.png" alt="" class="sunflower-28">
-            <img src="/images/source/sunflower-29.png" alt="" class="sunflower-29">
+            <img src="/images/source/sunflower-27.png" alt="" class="sunflower-27" loading="lazy">
+            <img src="/images/source/sunflower-28.png" alt="" class="sunflower-28" loading="lazy">
+            <img src="/images/source/sunflower-29.png" alt="" class="sunflower-29" loading="lazy">
         </section>
         <section class="oil-absorption">
-            <div class="container">
+            <div class="container_comparison text__container">
                 <div class="oil-absorption__container_flex">
                     <div class="oil-absorption__text">
                         <h1 class="oil-absorption__title text-gray uppercase">МАСЛОПОГЛОЩЕНИЕ</h1>
-                        <p class="oil-absorption__desc">У любого масла есть точка дымообразования. Это температура,
-                            при которой оно распадается на вредные вещества и начинает выделять едкий голубоватый дым.
-                            Рабочая температура и точка дымообразования не эквивалентны. Точка дымообразования —
-                            показатель
-                            того, какую нагрузку может выдержать то или иное масло. А рабочая температура — это
-                            параметр,
-                            при котором достигается лучший результат обжарки продукта.</p>
+                        <p class="oil-absorption__desc">Выбор масла для жарки снеков определяется целым рядом факторов,
+                            в том числе особенностями самого продукта и оборудования. Для фритюрных смесей используются
+                            различные виды растительных масел. Оптимальной основой для фритюрных смесей является
+                            уникальное высокоолеиновое подсолнечное масло.
+                            <br> <br>
+                            В процессе жарки вкус снека концентрируется, причем впитавшийся жир становится одним из
+                            основных компонентов готового снека. Фритюрный жир впитывается в полости снека, которые
+                            образовались в результате потери влаги. Таким образом снек приобретает необходимые
+                            качественные характеристики: текстуру, вкус и аромат, привлекательный внешний вид.
+                            <br> <br>
+                            Маслопоглощение при жарке будет варьироваться в широких пределах
+                            в зависимости от температуры, обжариваемого продукта и практики эксплуатации оборудования.
+                        </p>
                     </div>
-                    <img src="/images/source/oil-absorption__img.svg" alt="Картофель фри" class="oil-absorption__img">
+                    <img src="/images/source/oil-absorption__img.svg" alt="Картофель фри" class="oil-absorption__img"
+                        loading="lazy">
                 </div>
             </div>
         </section>
@@ -1074,34 +1416,37 @@
                 <div class="fat__container_grid">
                     <div class="fat__card">
                         <div class="fat__card-img_box">
-                            <img src="/images/source/fat-card1.svg" alt="" class="fat__card-img">
+                            <img src="/images/source/fat-card1.svg" alt="" class="fat__card-img" loading="lazy">
                         </div>
                         <div class="fat__card-content">
-                            <p class="fat__card-number text-yellow"><span class="counter-scroll">33</span>-<span class="counter-scroll">38</span>%</p>
+                            <p class="fat__card-number text-yellow"><span class="counter-scroll">33</span>-<span
+                                    class="counter-scroll">38</span>%</p>
                             <p class="fat__card-desc tetx-white">Картофельные чипсы</p>
                         </div>
                     </div>
                     <div class="fat__card">
                         <div class="fat__card-img_box">
-                            <img src="/images/source/fat-card1.svg" alt="" class="fat__card-img">
+                            <img src="/images/source/eat2.svg" alt="" class="fat__card-img" loading="lazy">
                         </div>
                         <div class="fat__card-content">
-                            <p class="fat__card-number text-yellow"><span class="counter-scroll">20</span>-<span class="counter-scroll">25</span>%</p>
+                            <p class="fat__card-number text-yellow"><span class="counter-scroll">20</span>-<span
+                                    class="counter-scroll">25</span>%</p>
                             <p class="fat__card-desc tetx-white">Пончики</p>
                         </div>
                     </div>
                     <div class="fat__card">
                         <div class="fat__card-img_box">
-                            <img src="/images/source/fat-card1.svg" alt="" class="fat__card-img">
+                            <img src="/images/source/eat3.svg" alt="" class="fat__card-img" loading="lazy">
                         </div>
                         <div class="fat__card-content">
-                            <p class="fat__card-number text-yellow"><span class="counter-scroll">10</span>-<span class="counter-scroll">15</span>%</p>
+                            <p class="fat__card-number text-yellow"><span class="counter-scroll">10</span>-<span
+                                    class="counter-scroll">15</span>%</p>
                             <p class="fat__card-desc tetx-white">Картофель фри</p>
                         </div>
                     </div>
                     <div class="fat__card">
                         <div class="fat__card-img_box">
-                            <img src="/images/source/fat-card1.svg" alt="" class="fat__card-img">
+                            <img src="/images/source/eat4.svg" alt="" class="fat__card-img" loading="lazy">
                         </div>
                         <div class="fat__card-content">
                             <p class="fat__card-number text-yellow"><span class="counter-scroll">10</span>%</p>
@@ -1110,16 +1455,18 @@
                     </div>
                     <div class="fat__card">
                         <div class="fat__card-img_box">
-                            <img src="/images/source/fat-card1.svg" alt="" class="fat__card-img">
+                            <img src="/images/source/eat5.svg" alt="" class="fat__card-img" loading="lazy">
                         </div>
                         <div class="fat__card-content">
                             <p class="fat__card-number text-yellow"><span class="counter-scroll">10</span>%</p>
-                            <p class="fat__card-desc tetx-white">Курица (без кожи)</p>
+                            <p class="fat__card-desc tetx-white">Лапша быстрого приготовления
+                                (типа рамен)</p>
                         </div>
                     </div>
                     <div class="fat__card">
                         <div class="fat__card-img_box">
-                            <img src="/images/source/fat-card1.svg" alt="" class="fat__card-img">
+                            <img src="/images/source/eat6.svg" alt="" class="fat__card-img" loading="lazy"
+                                style="max-height: 140px;">
                         </div>
                         <div class="fat__card-content">
                             <p class="fat__card-number text-yellow"><span class="counter-scroll">15</span>%</p>
@@ -1156,7 +1503,8 @@
             </div>
             <div class="container__control_second">
                 <div class="control__box_second">
-                    <img src="/images/source/controll__drop-oil.svg" alt="Капля масла" class="control__drop-oil">
+                    <img src="/images/source/controll__drop-oil.svg" alt="Капля масла" class="control__drop-oil"
+                        loading="lazy">
                     <div class="container_control revers">
                         <div class="control__wrapper-number revers">
                             <div class="number-box">
@@ -1174,36 +1522,63 @@
             </div>
         </section>
 
-        <div class="container">
-            <img src="/images/source/lab-img.png" alt="лабаратория" class="lab-img">
+        <section class="control_adapt">
+            <h2 class="control_adapt__title uppercase">КОНТРОЛЬ <br> КАЧЕСТВА <br> ПРОДУКЦИИ</h2>
+            <div class="control_adapt__num-container">
+                <div class="num__wrapper">
+                    <h3 class="num-container__title">14</h3>
+                    <p class="num-container__desc">точек контроля <br> на маслоэкстракционных <br> заводах (от семян до
+                        масла)</p>
+                </div>
+                <div class="num__wrapper">
+                    <h3 class="num-container__title_second">623</h3>
+                    <p class="num-container__desc_second num-container__desc">анализа</p>
+                </div>
+            </div>
+            <div class="control_adapt__num-container">
+                <div class="num__wrapper">
+                    <h3 class="num-container__title">7</h3>
+                    <p class="num-container__desc">точек контроля на жировом <br> комбинате (от получения <br> масла до
+                        его фасовки)</p>
+                </div>
+                <div class="num__wrapper">
+                    <h3 class="num-container__title_second">74</h3>
+                    <p class="num-container__desc_second num-container__desc">анализа</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container lab-img">
+            <img src="/images/source/lab-img.png" alt="лабаратория" class="lab-img" loading="lazy">
         </div>
 
         <section class="rusagro">
-            <img src="/images/source/sunflower-31.png" alt="" class="sunflower-31">
-            <img src="/images/source/sunflower-32.png" alt="" class="sunflower-32">
-            <img src="/images/source/sunflower-33.png" alt="" class="sunflower-33">
+            <img src="/images/source/sunflower-31.png" alt="" class="sunflower-31" loading="lazy">
+            <img src="/images/source/sunflower-32.png" alt="" class="sunflower-32" loading="lazy">
+            <img src="/images/source/sunflower-33.png" alt="" class="sunflower-33" loading="lazy">
             <div class="container">
                 <div class="rusagro__container_flex">
                     <img src="/images/source/rusagro-img.svg" alt="РУСАГРО" class="rusagro__img" data-aos="fade-down"
-                        data-aos-easing="linear" data-aos-duration="500">
+                        data-aos-easing="linear" data-aos-duration="500" loading="lazy">
                     <p class="rusagro__content">Группа компаний «Русагро» — один из крупнейших вертикально
                         интегрированных
                         агрохолдингов России. Группа компаний занимает значительную долю внутреннего производства
                         свинины, сахара, сельскохозяйственной и масложировой продукции.</p>
-                    <button class="progect__btn rusagro__btn tetx-white hadow__btn_bottom">Узнать больше</button>
+                    <a href="https://www.solpro.ru/" class="show__more">
+                        <button class="progect__btn rusagro__btn tetx-white hadow__btn_bottom">Узнать больше</button>
+                    </a>
                 </div>
             </div>
-            <img src="/images/source/sunflower-34.png" alt="" class="sunflower-34">
-            <img src="/images/source/sunflower-35.png" alt="" class="sunflower-35">
-            <img src="/images/source/sunflower-36.png" alt="" class="sunflower-36">
+            <img src="/images/source/sunflower-34.png" alt="" class="sunflower-34" loading="lazy">
+            <img src="/images/source/sunflower-35.png" alt="" class="sunflower-35" loading="lazy">
+            <img src="/images/source/sunflower-36.png" alt="" class="sunflower-36" loading="lazy">
         </section>
         <section class="assortment background-green">
             <div class="container">
                 <div class="yellow-box__wrapper">
-                    <div class="assortment__yellow-box">
+                    <div class="assortment__yellow-box adapt">
                         <p class="assortment__note tetx-white">Профессиональные масла и смеси <br> для фритюра Solpro
                         </p>
-
                     </div>
                     <h1 class="assortment__title tetx-white">Ассортимент дивизиона промышленных жиров <span
                             class="text-yellow">«Русагро»</span> для пищевых производств
@@ -1211,65 +1586,71 @@
                 </div>
 
                 <div class="assortment__container_flex">
+                    <div class="assortment__yellow-box">
+                        <p class="assortment__note tetx-white">Профессиональные масла и смеси <br> для фритюра Solpro
+                        </p>
+                    </div>
+
                     <div class="assortment__wrapper_flex">
-                        <div class="assortiment__card assortment__card1 border-10">
-                            <div class="assortment__card_click">
+
+                        <div class="assortiment__card_gold assortiment__card assortment__card1 border-10">
+                            <div class="assortment__card_click adapt">
                                 <a href="#" class="assortment__card_click-link"></a>
                             </div>
                             <p class="assortiment__card-desc tetx-white">Сливочное масло и промышленные сливки <span
                                     class="text-yellow">Solpro</span></p>
                         </div>
-                        <div class="assortiment__card assortment__card5 border-10">
-                            <div class="assortment__card_click">
+
+
+                        <div class="assortiment__card_gold assortiment__card assortment__card5 border-10">
+                            <div class="assortment__card_click adapt">
                                 <a href="#" class="assortment__card_click-link"></a>
                             </div>
-                            <p class="assortiment__card-desc tetx-white">Маргарины универсальные и специализированные
+                            <p class="assortiment__card-desc tetx-white">Маргарины универсальные
+                                и специализированные
                             </p>
                         </div>
+
+                    </div>
+
+                    <div class="assortment__wrapper_flex second ">
+                        <div class="assortmen_card__flex_first">
+                            <div class="assortiment__card_gold assortiment__card assortment__card2 border-10">
+                                <div class="assortment__card_click adapt">
+                                    <a href="#" class="assortment__card_click-link"></a>
+                                </div>
+                                <p class="assortiment__card-desc tetx-white">Жиры универсальные
+                                    и специализированные <span class="text-yellow">Solpro</span></p>
+                            </div>
+                            <div class="assortiment__card assortment__card3 border-10">
+                            </div>
+                        </div>
+                        <div class="assortmen_card__flex_second">
+                            <div class="assortiment__card assortment__card6 border-10">
+                            </div>
+                            <div class="assortiment__card assortment__card7 border-10">
+                                <div class="assortment__card_click adapt">
+                                    <a href="#" class="assortment__card_click-link"></a>
+                                </div>
+                                <p class=" assortiment__card-desc tetx-white">Сухие индустриальные
+                                    молочные
+                                    смеси <span class="text-yellow">Solpro</span></p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="assortment__wrapper_flex">
-                        <div class="assortment__container_flex">
-                        <div class="assortiment__card assortment__card2 border-10">
-                            <div class="assortment__card_click">
+                        <div class="assortiment__card_gold assortiment__card assortment__card4 border-10">
+                            <div class="assortment__card_click adapt">
                                 <a href="#" class="assortment__card_click-link"></a>
                             </div>
-                            <p class="assortiment__card-desc tetx-white">Жиры универсальные
-                                и специализированные <span class="text-yellow">Solpro</span></p>
-                        </div>
-                        <div class="assortiment__card assortment__card3 border-10">
-                            <!-- <div class="assortment__card_click">
-                                <a href="#" class="assortment__card_click-link"></a>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="assortment__container_flex">
-                        <div class="assortiment__card assortment__card6 border-10"></div>
-                        <!-- <div class="assortment__card_click">
-                            <a href="#" class="assortment__card_click-link"></a>
-                        </div> -->
-                        <div class="assortiment__card assortment__card7 border-10">
-                            <div class="assortment__card_click">
-                                <a href="#" class="assortment__card_click-link"></a>
-                            </div>
-                            <p class="assortiment__card assortiment__card-desc tetx-white">Сухие индустриальные молочные
-                                смеси <span class="text-yellow">Solpro</span></p>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="assortment__wrapper_flex">
-                        <div class="assortiment__card assortment__card4 border-10">
-                            <div class="assortment__card_click">
-                                <a href="#" class="assortment__card_click-link"></a>
-                            </div>
-                            <p class="assortiment__card assortiment__card-desc tetx-white">Заменители молочного жира
+                            <p class="assortiment__card-desc tetx-white">Заменители молочного жира
                                 <span class="text-yellow">Solpro</span>
                             </p>
                         </div>
 
-                        <div class="assortiment__card assortment__card8 border-10">
-                            <div class="assortment__card_click">
+                        <div class="assortiment__card_gold assortiment__card assortment__card8 border-10">
+                            <div class="assortment__card_click adapt">
                                 <a href="#" class="assortment__card_click-link"></a>
                             </div>
                             <p class="assortiment__card-desc tetx-white">Пасты для сбивания <span
@@ -1277,6 +1658,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
         <footer>
@@ -1290,47 +1672,44 @@
                         </div>
                         <ul class="footer__items">
                             <li class="footer__item"><a href="" class="footer__item-link">О нас</a></li>
-                            <li class="footer__item"><a href="" class="footer__item-link">Ассортимент</a></li>
-                            <li class="footer__item"><a href="" class="footer__item-link">Контакты</a></li>
+                            <li class="footer__item"><a href="" class="footer__item-link">Каталог</a></li>
+                            <li class="footer__item"><a href="#" class="footer__item-link">Контакты</a></li>
                             <li class="footer__item"><a href="" class="footer__item-link">Как купить</a></li>
+                            <li class="footer__item"><a href="" class="footer__item-link">Презентация</a></li>
+                            <li class="footer__item"><a href="" class="footer__item-link">Ассортимент</a></li>
                         </ul>
                     </div>
                     <div class="footer__wrapper-social">
                         <p class="footer__social-desc">Горячая линия:</p>
                         <a href="tel:+79995557768" class="footer__social-tel">+7 (999) 555-77-68</a>
                         <div class="social__wrapper">
-                            <a href="../src/images/source/vk-oil.svg" class="social__wrapper-icon">
-                                <img src="" alt="" class="rules__link-img">
+                            <a href="#" class="social__wrapper-icon">
+                                <img src="/images/source/vk-oil.svg" alt="" class="rules__link-img" loading="lazy">
                             </a>
-                            <a href="./images/source/tg-oil.svg" class="social__wrapper-icon">
-                                <img src="" alt="" class="rules__link-img">
+                            <a href=" #" class="social__wrapper-icon">
+                                <img src="/images/source/tg-oil.svg" alt="" class="rules__link-img" loading="lazy">
                             </a>
-                            <a href="/src/images/source/wa-oil.svg" class="social__wrapper-icon">
-                                <img src="" alt="" class="rules__link-img">
+                            <a href=" #" class="social__wrapper-icon">
+                                <img src="/images/source/wa-oil.svg" alt="" class="rules__link-img" loading="lazy">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="rules__wrapper">
+                <!-- <div class="rules__wrapper">
                     <a href="" class="rules__link">© 2024 ООО «Solpro». Все права защищены</a>
                     <a href="" class="rules__link">Политика Конфиденциальности</a>
                     <a href="" class="rules__link">Пользовательское соглашение</a>
                     <a href="" class="rules__link">Согласие на обработку персональных данных</a>
-                </div>
+                </div> -->
             </div>
         </footer>
 
     </main>
-
-
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<!--    <script src="js/swiper.js"></script>-->
-<!--    <script src="js/comfort.js"></script>-->
-<!--    <script src="js/counter.js"></script>-->
-<!--    <script src="js/enemies.js"></script>-->
-
-    <script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', () => {
             const backgroundImage = document.querySelector('.savings-bg');
             const savingsSection = document.querySelector('.savings');
@@ -1349,25 +1728,7 @@
 
             observer.observe(savingsSection);
         });
-    </script>
-
-    <!--    <script>-->
-
-    <!--      // document.addEventListener("DOMContentLoaded", (event) => {-->
-    <!--      //   // gsap.registerPlugin(ScrollTrigger);-->
-    <!--      //   gsap.to(".sunflower__wrapper", {-->
-    <!--      //     scrollTrigger: ".sunflower__wrapper",-->
-    <!--      //     duration:5,-->
-    <!--      //     y: "100%",-->
-    <!--      //-->
-    <!--      //   });-->
-    <!--      //-->
-    <!--      // });-->
-
-
-
-    <!--    </script>-->
-
+    </script> -->
     <script>
         AOS.init();
     </script>
