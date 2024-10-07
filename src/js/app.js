@@ -9,27 +9,26 @@
 // import filterInit from "./filter";
 import "../scss/app.scss";
 import scrollGsap from "./scrollGsap";
-// import componentsInit from "./comfort";
+// import enemies from "./enemies";
 import counterFn from "./counter";
-import elFn from "./enemies";
 import swiperFn from "./swiper";
+import menuAdapt from "./menuAdapt"
+import popup__adapt from "./pop-up__adapt";
+import lazy from "./lazy-video"
+import base__pop from "./base__pop-up";
+import list from "./list"
+import enemies from "./enemies"
 
 const start = () => {
-  counterFn();
-  elFn();
-  swiperFn();
   scrollGsap();
-  // openInit();
-  // closeInit();
-  // selectorInit();
-  // filterInit();
-  //   clickInit();
-  // scrollByInit();
-  // toUpInit();
-  // const menu = burgerMenuItit();
-  // menu.open();
-
-  console.log("loaded");
+  counterFn();
+  menuAdapt();
+  swiperFn();
+  popup__adapt();
+  lazy();
+  base__pop();
+  list();
+  enemies();
 };
 
 document.addEventListener("DOMContentLoaded", start);

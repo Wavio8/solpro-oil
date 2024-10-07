@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+
 }
 
 // @font-face {
@@ -38,7 +39,10 @@
 //   font-weight: 100;
 // }
 
-
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 body {
   max-width: 1920px;
@@ -46,11 +50,13 @@ body {
   font-family: 'MuseoSansCyrl';
   color: rgba(0, 0, 0, 1);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
 }
+
 
 .container {
   width: 1580px;
@@ -95,6 +101,10 @@ a {
   background-color: rgba(19, 93, 76, 1);
 }
 
+.background-green_litght {
+  background: rgba(0, 108, 105, 1);
+}
+
 .background-yellow {
   background-color: rgba(255, 248, 223, 1);
   ;
@@ -115,9 +125,7 @@ a {
   line-height: 18px;
   letter-spacing: -0.01em;
   text-align: center;
-  transition: all .3s ease;
   cursor: pointer;
-  transition: all .6s ease;
 }
 
 .progect__btn:hover {
@@ -188,7 +196,7 @@ a {
 }
 
 .menu {
-  background-image: url('/src/images/source/baner.png');
+  background-image: url('/src/images/source/bg__menu_compressed.png');
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -216,7 +224,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-right: 300px;
+
 }
 
 .menu__container {
@@ -279,6 +287,11 @@ a {
   min-width: 100%;
 }
 
+
+.container.lab-img {
+  padding: 0 170px;
+}
+
 .ticker__text {
   position: relative;
   flex: 0 0 auto;
@@ -331,7 +344,7 @@ a {
 
 
 .prewiev {
-  background: url('/src/images/source/oil-img1.png');
+  background: url('/src/images/source/bg-prew__compressed.png');
   background-position: top left;
   background-size: 556px auto;
   background-repeat: no-repeat;
@@ -376,7 +389,7 @@ a {
 
 .prewiev__desc {
   font-size: 42px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 52px;
   letter-spacing: -0.02em;
   text-align: left;
@@ -451,7 +464,8 @@ a {
   height: 120px;
   padding: 30px;
   position: relative;
-  padding-left: 50px;
+  padding-left: 32px;
+  padding-right: 33px;
   position: absolute;
   top: 130px;
   left: 80px;
@@ -662,21 +676,21 @@ a {
   position: absolute;
   bottom: -174px;
   left: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 .sunflower-18 {
   position: absolute;
   bottom: -171px;
   left: 285px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .sunflower-19 {
   position: absolute;
   bottom: -61px;
   left: 189px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .sunflower-20 {
@@ -710,7 +724,7 @@ a {
 .sunflower-24 {
   position: absolute;
   top: 372px;
-  left: 53px;
+  left: 15px;
   z-index: -1;
 }
 
@@ -724,7 +738,7 @@ a {
 .sunflower-26 {
   position: absolute;
   right: 0;
-  bottom: 366px;
+  top: 410px;
   z-index: -1;
 }
 
@@ -745,8 +759,9 @@ a {
 .sunflower-29 {
   position: absolute;
   left: 0;
-  bottom: 111px;
+  top: 740px;
   z-index: -1;
+  display: none;
 }
 
 .sunflower-31 {
@@ -792,17 +807,14 @@ a {
 }
 
 .sunflower__wrapper {
-  /* position: relative;
-  bottom: 120px;
-  transform: translateX(-50%);
-  left: 50%; */
+
   position: absolute;
-  //bottom: 0px;
+
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  //left: 50%;
+
   bottom: 118px;
   height: 470px;
   width: 1580px;
@@ -935,12 +947,16 @@ a {
   position: relative;
 }
 
+
 .savings-bg {
   position: absolute;
-  top: 0;
-  right: -100%;
+  /* top: 0; */
+  bottom: 0;
+  right: 0;
   width: 100%;
-  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  height: 740px;
   overflow-x: hidden;
 }
 
@@ -1015,10 +1031,10 @@ a {
   right: 0;
 }
 
-.savings-bg.animate {
-  transform: translateX(-100%);
-  opacity: 1;
-}
+// .savings-bg.animate {
+//   transform: translateX(-100%);
+//   opacity: 1;
+// }
 
 .rusagro_first {
   margin-bottom: 43px;
@@ -1030,66 +1046,67 @@ a {
 
 #image-cap1 {
   bottom: 30px;
-  left: 360px;
+  left: 388px;
 }
 
 #image-cap2 {
-  bottom: 90px;
-  left: 429px;
+  left: 915px;
+  top: 362px;
 }
 
 #image-cap3 {
-  bottom: -1px;
-  left: -18px;
+  bottom: 19px;
+  left: 242px;
 }
 
 #image-cap4 {
-  right: 351px;
-  bottom: 37px;
+  left: 1528px;
+  bottom: 46px;
 }
 
 #image-cap5 {
-  right: 299px;
-  top: -13px;
+  left: 1509px;
+  top: 90px;
 }
 
 #image-cap6 {
-  right: 561px;
-  top: 80px;
+  left: 1271px;
+  top: 171px;
 }
 
 #image-cap7 {
-  right: 599px;
-  top: 204px;
+  left: 1270px;
+  top: 282px;
 }
 
 #image-cap8 {
-  right: 557px;
+  left: 1500px;
   bottom: 292px;
+
 }
 
 #image-cap9 {
-  right: 558px;
+  left: 1300px;
   bottom: 195px;
 }
 
 #image-cap10 {
-  right: 636px;
+  left: 1222px;
   bottom: 189px;
 }
 
 #image-cap11 {
-  right: 702px;
-  top: 401px;
+  left: 1192px;
+  top: 457px;
 }
 
 #image-cap12 {
-  right: 843px;
-  top: 291px;
+  left: 915px;
+  top: 362px;
 }
 
 
-.control{
+.control {
   margin-bottom: 180px;
 }
 
@@ -1099,27 +1116,27 @@ a {
 }
 
 .container_control.revers {
-  margin: 0 20% 0 32%;
+  margin: 0 20% 0 31%;
   height: 100%;
 }
 
 
-  .control__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    /* justify-content: space-between; */
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 100%;
-    gap: 115px;
+.control__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  /* justify-content: space-between; */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  gap: 100px;
 }
 
 
-.lab-img{
+.lab-img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 118px;
@@ -1141,7 +1158,7 @@ a {
 
 .control__box_first,
 .control__box_second {
-  width: 100%;
+  width: 1600px;
   height: 308px;
   background: linear-gradient(90deg, #F5C51B 0%, #ED8E00 100%);
   padding: 9px;
@@ -1155,22 +1172,36 @@ a {
   width: 284px;
 }
 
+
 .control__wrapper-number {
   height: 100%;
-  width: 778px;
-  background-image: url('/src/images/source/control-wrapper.svg');
+  width: 70%;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzc4IiBoZWlnaHQ9IjI5MCIgdmlld0JveD0iMCAwIDc3OCAyOTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBvcGFjaXR5PSIwLjUiIGQ9Ik0wIDE2QzAgNy4xNjM0NSA3LjE2MzQ0IDAgMTYgMEg1OTNDNjk1LjE3MyAwIDc3OCA4Mi44MjczIDc3OCAxODVWMjkwSDE2QzcuMTYzNDYgMjkwIDAgMjgyLjgzNyAwIDI3NFYxNloiIGZpbGw9IiM5RTQ2MDAiLz4NCjxwYXRoIGQ9Ik0wIDE1QzAgNi43MTU3MyA2LjcxNTczIDAgMTUgMEg0MDFDNDA5LjI4NCAwIDQxNiA2LjcxNTczIDQxNiAxNVYyOTBIMTVDNi43MTU3NCAyOTAgMCAyODMuMjg0IDAgMjc1VjE1WiIgZmlsbD0iI0ZGRjhERiIvPg0KPHBhdGggZD0iTTQxNiA5Ny4wNTg2QzQxNiAxNDQuMDU0IDUyNSAxNDQuMDU5IDUyNSAxNDQuMDU5QzUyNSAxNDQuMDU5IDQxNiAxNjguMDU5IDQxNiAyNDEuMDU5QzQxNiAzMTQuMDU5IDM4MCAxNjguMDU5IDM4MCAxNjguMDU5QzM4MCAxNjguMDU5IDQxNiA1MC4wNjM1IDQxNiA5Ny4wNTg2WiIgZmlsbD0iI0ZGRjhERiIvPg0KPC9zdmc+DQo=);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  justify-content: center;
   display: flex;
-  gap: 95px;
-
+  gap: 166px;
 }
+
 
 .control__wrapper-number.revers {
-  background-image: url('/src/images/source/control-wrapper2.svg');
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzc4IiBoZWlnaHQ9IjI5MCIgdmlld0JveD0iMCAwIDc3OCAyOTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBvcGFjaXR5PSIwLjUiIGQ9Ik0wIDE2QzAgNy4xNjM0NSA3LjE2MzQ0IDAgMTYgMEg3NzhWMTA1Qzc3OCAyMDcuMTczIDY5NS4xNzMgMjkwIDU5MyAyOTBIMTZDNy4xNjM0NiAyOTAgMCAyODIuODM3IDAgMjc0VjE2WiIgZmlsbD0iIzlFNDYwMCIvPg0KPHBhdGggZD0iTTAgMTVDMCA2LjcxNTczIDYuNzE1NzMgMCAxNSAwSDQwMUM0MDkuMjg0IDAgNDE2IDYuNzE1NzMgNDE2IDE1VjI5MEgxNUM2LjcxNTc0IDI5MCAwIDI4My4yODQgMCAyNzVWMTVaIiBmaWxsPSIjRkZGOERGIi8+DQo8cGF0aCBkPSJNNDE2IDk4LjAwNzhDNDE2IDE0NS4wMDMgNTI1IDE0NS4wMDggNTI1IDE0NS4wMDhDNTI1IDE0NS4wMDggNDE2IDE2OS4wMDggNDE2IDI0Mi4wMDhDNDE2IDMxNS4wMDggMzgwIDE2OS4wMDggMzgwIDE2OS4wMDhDMzgwIDE2OS4wMDggNDE2IDUxLjAxMjcgNDE2IDk4LjAwNzhaIiBmaWxsPSIjRkZGOERGIi8+DQo8L3N2Zz4NCg==);
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 155px;
 }
 
-.number-box {
-  padding: 55px;
-}
 
 .number-box__title {
   font-size: 100px;
@@ -1188,14 +1219,15 @@ a {
   /* Убираем цвет текста */
   margin-bottom: 19px;
 }
-.oil-gif-design{
+
+.oil-gif-design {
   position: absolute;
   bottom: -20px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   right: 0;
-  margin: 0 auto;
   z-index: 0;
-  padding-left: 45px;
+  width: 35%;
 }
 
 .number-box__title_second {
@@ -1207,7 +1239,8 @@ a {
   margin-bottom: 19px;
 }
 
-.number-box__desc, .number-box__desc-second {
+.number-box__desc,
+.number-box__desc-second {
   font-size: 20px;
   font-weight: 300;
   line-height: 26px;
@@ -1219,7 +1252,107 @@ a {
 }
 
 
+.control__wrapper-number {
+  padding: 55px;
+}
 
+
+// АДАПТИВ СЕКЦИИ CONTROL
+
+.control_adapt {
+  background: linear-gradient(90deg, #F5C51B 0%, #ED8E00 100%);
+  padding: 67px 0px 29px 0px;
+  border-radius: 0 150px 0 0;
+  margin-bottom: 70px;
+  display: none;
+}
+
+.control_adapt__title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-bottom: 63px;
+  padding-left: 10%;
+}
+
+.control_adapt__num-container {
+  background-image: url('/src/images/source/num-background.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 10%;
+}
+
+.assortment__yellow-box {
+  display: none;
+}
+
+.assortment__yellow-box.adapt {
+  display: block;
+}
+
+.num__wrapper {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.num-container__title {
+  font-size: 150px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  text-align: left;
+  background: linear-gradient(90deg, #F5C51B 0%, #ED8E00 100%);
+  -webkit-background-clip: text;
+  /* Для поддержки в WebKit браузерах */
+  -webkit-text-fill-color: transparent;
+  /* Для поддержки в WebKit браузерах */
+  background-clip: text;
+  /* Для других браузеров */
+  color: transparent;
+  /* Убираем цвет текста */
+  margin-bottom: 19px;
+}
+
+
+.num-container__title_second {
+  color: rgb(255, 255, 255) !important;
+  font-size: 150px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.num-container__desc_second {
+  color: rgb(255, 255, 255) !important;
+}
+
+
+
+.num-container__desc {
+  font-size: 35px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.num-container__desc_second {
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: rgb(255, 255, 255) !important;
+}
 
 
 
@@ -1235,9 +1368,9 @@ a {
 }
 
 .rusagro__desc {
-  font-size: 48px;
-  font-weight: 300;
-  line-height: 52px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
   letter-spacing: -0.01em;
   text-align: left;
   margin-bottom: 32px;
@@ -1246,6 +1379,7 @@ a {
 .rusagro__container_flex_first {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 31px;
   margin-bottom: 43px;
 }
@@ -1257,22 +1391,40 @@ a {
   background-repeat: no-repeat;
   background-size: auto 710px;
 }
-.super-slow-video{
-  position: absolute;top:-510px;left: 0;width: 100%;
+
+.super-slow-video__wrap {
+  position: relative;
+  /* Устанавливаем относительное позиционирование для родительского блока */
+  overflow: hidden;
+  /* Скрываем все, что выходит за пределы блока */
+}
+
+.super-slow-video {
+  width: 100%;
+  /* Ширина видео на 100% */
+  height: auto;
+  /* Автоматическая высота для сохранения пропорций */
+}
+
+.desig-gradient {
+  position: absolute;
+  /* Абсолютное позиционирование для перекрытия видео */
+  bottom: 0;
+  /* Прикрепляем к нижней границе родительского блока */
+  left: 0;
+  /* Выравнивание по левому краю */
+  right: 0;
+  /* Выравнивание по правому краю */
+  height: 100px;
+  /* Высота градиента (можно настроить по желанию) */
+  background: linear-gradient(0deg, #FFFFFF 20.06%, rgba(255, 255, 255, 0) 94.99%);
 }
 
 .oil-man {
   position: relative;
 }
 
-.oil-man__logo {
-  /* position: absolute;
-  bottom: 120px;
-  transform: translateX(-50%);
-  left: 50%;
-  height: 470px;
-  width: 1580px; */
-}
+
 
 
 .oil-man__wrapper {
@@ -1309,7 +1461,8 @@ a {
 
 
 
-.oil-man__img {
+.oil-man__img,
+.oil-man__img_adapt {
   position: absolute;
   bottom: 0;
   z-index: 1;
@@ -1317,6 +1470,10 @@ a {
   width: 627px;
   height: 595px;
   object-fit: contain;
+}
+
+.oil-man__img_adapt {
+  display: none;
 }
 
 .fryer-oil {
@@ -1372,26 +1529,34 @@ a {
   position: relative;
 }
 
+
 .oil-man_second-img {
-  height: auto;
+  height: 873px;
+  -o-object-fit: contain;
   object-fit: contain;
   position: absolute;
-
-  left: 0;
-  padding-right: 58px;
+  left: 50%;
+  transform: translateX(-54%);
   bottom: 0;
   right: 0;
   margin: 0 auto;
-
-
+  width: 100%;
 }
-.container-oil-gif{
+
+
+.container-oil-gif {
   overflow: hidden;
 }
 
 .oil-man__logo_second {
   margin-bottom: 130px;
+  margin-bottom: 130px;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 
 .classification {
   position: relative;
@@ -1420,6 +1585,7 @@ a {
 
 .classification__text {
   position: relative;
+  max-width: 66%;
 }
 
 .classification__item {
@@ -1438,7 +1604,7 @@ a {
 }
 
 .classification__namber {
-  background-image: url('/src/images/source/classification-number.svg');
+  background-image: url(/src/images/source/classification-number.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1449,21 +1615,28 @@ a {
   line-height: 50px;
   letter-spacing: -0.02em;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  padding-left: 20px;
+  padding-top: 10px;
+  padding-left: 22px;
 }
 
 .classification__card {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .bom {
   position: relative;
-  background-image: url('/src/images/source/bom__oil-background.png');
+  background-image: url('/src/images/source/b-bg.png');
   background-size: 913px 550px;
   background-repeat: no-repeat;
   background-position: top left;
@@ -1472,7 +1645,7 @@ a {
 .drop-oil {
   position: absolute;
   top: 530px;
-  left: 163px;
+  left: 83px;
 }
 
 .bom__container_flex {
@@ -1508,7 +1681,7 @@ a {
   gap: 45px;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 48%;
 }
 
 .bom__btn {
@@ -1516,7 +1689,7 @@ a {
 }
 
 .bom__green {
-  padding: 110px 219px 161px;
+  padding: 143px 219px 161px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1694,6 +1867,7 @@ a {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.02em;
+  text-align: right;
   display: inline;
   width: 215px;
 }
@@ -1789,7 +1963,7 @@ a {
 }
 
 .stability__note {
-  margin-top: 40px;
+  margin-top: 21px;
 }
 
 .stability__note:nth-child(1) {
@@ -1908,9 +2082,9 @@ a {
   left: 71px;
 }
 
-.advantages__card-list {
-  max-width: 667px;
-}
+// .advantages__card-list {
+//   max-width: 667px;
+// }
 
 .advantages__card-title {
   font-size: 26px;
@@ -1924,6 +2098,7 @@ a {
   padding-left: 37px;
   margin-bottom: 25px;
   position: relative;
+  font-size: 17px;
 }
 
 .advantages__card-item::after {
@@ -1936,28 +2111,62 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  top: 0;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
 }
 
 .base {
-  //background-image: url('/src/images/source/bear4.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
-  //height: 1000px;
   position: relative;
   z-index: 100;
-  padding-top: 650px;
   padding-bottom: 65px;
 }
-.desig-gradient{
-  width: 100%;
-  height: 240px;
-  position: absolute;
-  top: 320px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+
+.base__green-card {
+  position: relative;
 }
+
+.close__base {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+}
+
+.pop-up__base {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 30px 20px;
+  display: none;
+  z-index: 2200;
+  width: 92%;
+}
+
+.pop-up__base.open {
+  display: block;
+}
+
+.pop-up__base-text {
+  color: rgba(1, 90, 77, 1);
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.pop-up__base-items {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  list-style-type: disc;
+  margin-left: 25px;
+}
+
 
 .base__blur {
   position: absolute;
@@ -1977,9 +2186,8 @@ a {
   text-align: left;
 }
 
-.base__content-title,
-.base__content-desc {
-  background-image: linear-gradient(to right, #ED8E00 0%, #F5C51B 100%);
+.base__content-title {
+  background-image: linear-gradient(to left, #ED8E00 0%, #F5C51B 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -2044,6 +2252,30 @@ a {
   z-index: 100;
   margin-bottom: 80px;
 }
+
+
+.base-blur {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 800;
+  display: none;
+}
+
+.base-blur.open {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 800;
+  display: block;
+}
+
 
 .base-second__des {
   max-width: 713px;
@@ -2111,12 +2343,12 @@ a {
 .chips-img {
   position: absolute;
   top: -76px;
-  right: 300px;
+  right: 135px;
   z-index: 100;
 }
 
 .oil-man__wrapper.chips {
-  padding: 170px 868px 131px 100px;
+  padding: 170px 738px 131px 100px;
   position: relative;
   margin-top: 355px;
   margin-bottom: 120px;
@@ -2129,7 +2361,6 @@ a {
   background-repeat: no-repeat;
   background-position: center 35px;
   background-size: 1920px auto;
-  height: 940px;
 }
 
 .moisture-title {
@@ -2156,20 +2387,47 @@ a {
 .moisture__content {
   position: relative;
   display: flex;
-  gap: 80px;
   justify-content: space-between;
   padding-top: 76px;
+  margin-bottom: 112px;
 }
 
 .moisture__view__wrapper {
   max-width: 40%;
+  width: 640px;
+  height: 726px;
 }
 
 .moisture__well__wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  max-width: 50%;
-  width: 50%;
+  max-width: 54%;
+  width: 54%;
+}
+
+
+.moisture__view.moisture__view2 {
+  background-image: url('/src/images/source/view-background2.svg') !important;
+}
+
+.moisture__view.moisture__view3 {
+  background-image: url('/src/images/source/view-background3.svg') !important;
+}
+
+.moisture__view.moisture__view4 {
+  background-image: url('/src/images/source/view-background4.svg') !important;
+}
+
+.moisture__view.moisture__view5 {
+  background-image: url('/src/images/source/view-background5.svg') !important;
+}
+
+.moisture__view.moisture__view6 {
+  background-image: url('/src/images/source/view-background6.svg') !important;
+}
+
+.moisture__view.moisture__view7 {
+  background-image: url('/src/images/source/view-background7.svg') !important;
 }
 
 
@@ -2431,17 +2689,13 @@ a {
   top: 5.5px;
 }
 
-
-
-
-
 .fuming {
   margin-bottom: 118px;
 }
 
 .fuming__text {
-  width: 50%;
-  margin-left: 100px;
+  width: 49%;
+  margin-left: 160px;
 }
 
 .drop__wrapper {
@@ -2522,9 +2776,9 @@ a {
 }
 
 .comparison__title {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 30px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 65px;
   letter-spacing: -0.02em;
   text-align: left;
   margin-bottom: 36px;
@@ -2544,6 +2798,10 @@ a {
 .comparison__list {
   margin-bottom: 40px;
 }
+
+
+
+
 
 .oil-absorption__container_flex {
   display: flex;
@@ -2643,7 +2901,9 @@ a {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  max-width: 125px;
+  min-width: 125px;
+  width: 125px;
+  height: 125px;
   max-height: 125px;
 }
 
@@ -2732,7 +2992,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   max-width: 1000px;
 }
 
@@ -2758,9 +3018,10 @@ a {
   display: flex;
   justify-content: center;
   gap: 25px;
+  height: 561px;
 }
 
-.assortment__wrapper_flex{
+.assortment__wrapper_flex {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -2768,13 +3029,30 @@ a {
 }
 
 .assortment {
-  padding: 120px;
-  padding: 135px;
+  padding: 120px 0 135px 0;
   position: relative;
 }
 
 .assortiment__card {
   position: relative;
+  cursor: pointer;
+  background: rgba(0, 108, 105, 1);
+  transition: all .8s ease;
+}
+
+.assortiment__card:hover .assortment__card_click.adapt {
+  opacity: 1;
+  visibility: visible;
+}
+
+.assortment__card_click.adapt {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .8s ease;
+}
+
+.assortiment__card:hover {
+  background: linear-gradient(90deg, #F5C51B 0%, #ED8E00 100%);
 }
 
 .assortment__card_click {
@@ -2791,18 +3069,28 @@ a {
   right: 20px;
 }
 
+.assortmen_card__flex_first {
+  gap: 25px;
+  display: flex;
+  height: 68%;
+}
+
+.assortmen_card__flex_second {
+  gap: 25px;
+  display: flex;
+}
+
+
 .assortment__card1 {
-  grid-area: f;
-  background-color: rgba(0, 108, 105, 1);
+  height: 42%;
+  width: 100%;
 }
 
 .assortment__card2 {
-  grid-area: i;
-  background-color: rgba(0, 108, 105, 1);
+  height: 100%;
 }
 
 .assortment__card3 {
-  grid-area: b;
   background-image: url('/src/images/source/grid__card3.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -2810,35 +3098,32 @@ a {
 }
 
 .assortment__card4 {
-  grid-area: o;
-  background-color: rgba(0, 108, 105, 1);
+  height: 100%;
 }
 
 .assortment__card5 {
-  grid-area: n;
-  background: linear-gradient(90deg, #F5C51B 0%, #ED8E00 100%);
+  height: 53%;
+  width: 100%;
 
 }
 
 .assortment__card6 {
-  grid-area: z;
   background-image: url('/src/images/source/grid__card6.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 160px;
-  width: 160px;
+  min-height: 160px;
+  min-width: 160px;
 }
 
 .assortment__card7 {
-  grid-area: e;
-  background-color: rgba(0, 108, 105, 1);
+  max-height: 160px;
 }
 
 .assortment__card8 {
-  grid-area: r;
-  background-color: rgba(0, 108, 105, 1);
+  height: 44%;
 }
+
 
 .assortment__title {
   font-size: 60px;
@@ -2862,9 +3147,11 @@ a {
   background-image: url('/src/images/source/grid__yellow-box.svg');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
-  height: 535px;
-  width: 785px;
+  height: 498px;
+  width: 670px;
+  border-radius: 10px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -2886,7 +3173,7 @@ a {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  height: 100%;
+  // height: 100%;
 }
 
 .rules__link_adapt-menu {
@@ -3014,7 +3301,7 @@ a {
 footer {
   background-image: url('/src/images/source/footer-background.png');
   background-size: cover;
-  padding: 120px 0 38px 0;
+  padding: 80px 0 80px 0;
 }
 
 .footer__container {
@@ -3027,7 +3314,7 @@ footer {
 .footer__wrapper-content {
   display: flex;
   justify-content: center;
-  gap: 107px;
+  gap: 60px;
   align-items: flex-start;
 }
 
@@ -3057,6 +3344,14 @@ footer {
   gap: 23px;
 }
 
+.footer__item:hover .footer__item-link {
+  color: rgba(253, 160, 54, 1);
+}
+
+.social__wrapper_menu {
+  margin-bottom: 50px;
+}
+
 .rules__wrapper {
   display: flex;
   justify-content: space-between;
@@ -3081,10 +3376,19 @@ footer {
 }
 
 .footer__items {
-  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 25px;
+  column-gap: 40px;
 }
 
 .footer__item-link {
@@ -3094,6 +3398,11 @@ footer {
   letter-spacing: -0.01em;
   text-align: left;
   color: rgba(255, 255, 255, 1);
+  transition: all .5s ease;
+}
+
+.base__green-card {
+  cursor: pointer;
 }
 
 .footer__wrapper-social {
@@ -3144,7 +3453,9 @@ footer {
 }
 
 @media (max-width: 1800px) {
-
+  .control__content {
+    gap: 85px;
+  }
 }
 
 
@@ -3200,6 +3511,40 @@ footer {
   .stability__note {
     max-width: 40%;
   }
+
+  .control__box_first,
+  .control__box_second {
+    width: 1400px;
+  }
+
+  .control__wrapper-number {
+    gap: 130px;
+  }
+
+  .control__wrapper-number.revers {
+    gap: 130px;
+  }
+
+  .control__content {
+    gap: 15px;
+  }
+
+  .sunflower__wrapper {
+    width: 100%;
+  }
+
+  .oil-man__logo-sunflower {
+    right: 0;
+    left: 0;
+    display: block;
+    margin: 0 auto;
+    width: 1400px;
+  }
+
+  .menu__link_phone {
+    display: none;
+  }
+
 }
 
 @media (max-width: 1520px) {
@@ -3289,7 +3634,7 @@ footer {
     background-size: contain;
     height: 371px;
     width: 552px;
-    bottom: 122px;
+    bottom: 35px;
     right: 0;
     object-fit: contain;
   }
@@ -3297,25 +3642,10 @@ footer {
   .assortment__title {
     font-size: 38px;
     line-height: normal;
+    max-width: 50%;
   }
 
-  .assortment__container_grid {
-    grid-template-areas:
-      "f"
-      "i"
-      "b"
-      "o"
-      "n"
-      "i"
-      "b"
-      "r"
-      "n"
-      "z"
-      "e"
-      "r";
-    grid-template-columns: 1fr;
-    /* Устанавливаем одну колонку */
-  }
+
 
   .bottle__card:nth-child(1) {
     width: 328px;
@@ -3377,6 +3707,24 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 60px;
+  }
+
+  .container_control {
+    margin: 0px 0 0 11%;
+  }
+
+  .container__control_second {
+    padding-left: 0%;
+  }
+
+  .container_control.revers {
+    margin: 0px 2% 0 41%;
+    height: 100%;
+  }
+
+  .control__wrapper-number {
+    justify-content: center;
   }
 
 
@@ -3429,7 +3777,7 @@ footer {
   }
 
   .bom__tetx-wrapper {
-    gap: 28px;
+    gap: 38px;
     width: 45%;
   }
 
@@ -3531,12 +3879,142 @@ footer {
     min-width: 100%;
     text-align: center;
   }
+
+  .control__box_first,
+  .control__box_second {
+    width: 1300px;
+  }
+
+  .container__control_first {
+    padding-right: 0%;
+  }
+
+  .control__box_first {
+    margin-bottom: 10px;
+  }
+
+  .container_control {
+    margin: 0px;
+  }
+
+  .control__content {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .container_control.revers {
+    margin: 0px 2% 0 32%;
+  }
+
+  .rusagro__container_flex {
+    align-items: center;
+  }
+
+  .rusagro__content {
+    max-width: 621px;
+    margin-left: 240px;
+    margin-top: 49px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+
+  .oil-man__logo-sunflower {
+    bottom: -607px;
+    width: 1200px;
+  }
+
+  .savings-bg {
+    position: absolute;
+    bottom: 0;
+    // right: -100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: left;
+    object-position: left;
+    height: 520px;
+    overflow-x: hidden;
+  }
+
+  #image-cap1 {
+    bottom: 28px;
+    left: 772px;
+    width: 66px;
+  }
+
+  #image-cap2 {
+    left: 766px;
+    top: 722px;
+  }
+
+  #image-cap3 {
+    bottom: 8px;
+    left: 153px;
+    width: 60px;
+  }
+
+  #image-cap10 {
+    left: 1001px;
+    bottom: 431px;
+  }
+
+  #image-cap5 {
+    left: 978px;
+    top: 360px;
+    width: 75px;
+  }
+
+  #image-cap6 {
+    left: 815px;
+    top: 405px;
+    width: 70px;
+  }
+
+  #image-cap7 {
+    left: 819px;
+    top: 483px;
+    width: 40px;
+  }
+
+  #image-cap8 {
+    left: 421px;
+    bottom: 36px;
+  }
+
+  #image-cap9 {
+    left: 498px;
+    bottom: 85px;
+    width: 20px;
+  }
+
+  #image-cap10 {
+    left: 827px;
+    bottom: 131px;
+  }
+
+  #image-cap11 {
+    left: 558px;
+    top: 702px;
+  }
+
+  #image-cap12 {
+    left: 600px;
+    top: 546px;
+    width: 83px;
+  }
 }
 
 @media (max-width: 1299px) {
   .container {
     width: 1200px;
     margin: 0 auto;
+  }
+
+  .container.lab-img {
+    padding: 0;
   }
 
   .container_big {
@@ -3559,9 +4037,13 @@ footer {
     line-height: normal;
   }
 
-  .rusagro__desc {
-    font-size: 30px;
-    line-height: normal;
+  .btn-adapt {
+    display: block;
+    z-index: 1000;
+  }
+
+  .menu__btn {
+    display: none;
   }
 
   .heands {
@@ -3592,7 +4074,7 @@ footer {
 
   .fat__container_grid {
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    justify-items: start;
   }
 
   .rusagro {
@@ -3636,7 +4118,7 @@ footer {
 
   .wheel.wheel4 {
     margin-top: 70px;
-    margin-left: 51px;
+
   }
 
   .wheel.wheel5 {
@@ -3651,11 +4133,61 @@ footer {
     height: 238px;
   }
 
-  .moisture__view {
-    width: 620px;
-    height: 718px;
+  // .moisture__view {
+  //   width: 620px;
+  //   height: 718px;
+  // }
+
+  .container_control.revers {
+    margin: 0px 0% 0 32%;
+  }
+
+  .control__box_first,
+  .control__box_second {
+    width: 100%;
+  }
+
+  .control__content {
+    gap: 10px;
+  }
+
+  .control__title {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .control__drop-oil {
+    position: absolute;
+    bottom: 22px;
+    left: 14px;
+    height: 590px;
+    width: 189px;
+    object-fit: contain;
+  }
+
+  .container_control.revers {
+    margin: 0 0 0 30%;
+  }
+
+  .fryer-oil__container_grid {
+    margin-bottom: 330px;
+  }
+
+  .oil-man_second-img {
+    height: auto;
+  }
+
+  .oil-man__logo-sunflower {
+    bottom: -445px;
+    width: 1100px;
+  }
+
+  .assortiment__card-desc {
+    font-size: 16px;
+    line-height: normal;
   }
 }
+
 
 @media (max-width: 1199px) {
   .container {
@@ -3733,7 +4265,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 100px;
-    justify-items: center;
   }
 
   .advantages__title {
@@ -3811,6 +4342,64 @@ footer {
     margin-bottom: 65px;
   }
 
+  .oil-man__img {
+    left: 50%;
+    transform: translateX(-90%);
+  }
+
+  .oil-man__wrapper {
+    border-radius: 200px 200px 0 0;
+    padding: 155px 50px 112px 625px;
+  }
+
+  .oil-man__logo-sunflower {
+    bottom: -685px;
+    width: 1000px;
+  }
+
+  .moisture-title,
+  .moisture-desc {
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+
+  .assortment__yellow-box {
+    width: 50%;
+  }
+
+
+  .menu__wrapper {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.8s ease-in;
+    transition: all 0.8s ease-in;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+    padding-top: 131px;
+  }
+
+  .menu__container {
+    justify-content: space-between;
+  }
+
+
 }
 
 @media (max-width: 1099px) {
@@ -3861,6 +4450,7 @@ footer {
 
   .criteria__desc {
     font-size: 17px;
+    line-height: normal;
   }
 
   .criteria__card-number span {
@@ -3875,6 +4465,12 @@ footer {
   .base-second__item {
     font-size: 17px;
     line-height: normal;
+  }
+
+  .moisture {
+
+    background-position: bottom;
+
   }
 
   .base-second__item::before {
@@ -3933,7 +4529,126 @@ footer {
     padding: 260px 80px 61px 80px;
   }
 
+  .assortment__card_click.adapt {
+    opacity: 1;
+    visibility: visible;
+  }
 
+  .assortment__container_flex {
+    display: -webkit-box;
+    height: auto;
+  }
+
+  .assortment__container_flex {
+    flex-direction: column;
+  }
+
+  .assortment__wrapper_flex {
+    flex-direction: row;
+  }
+
+  .assortment__wrapper_flex.second {
+    flex-direction: column;
+  }
+
+  .assortment__card7 {
+    max-height: none;
+    width: 100%;
+  }
+
+  .assortment__card8 {
+    height: auto;
+    width: 100%;
+  }
+
+  .assortmen_card__flex_first {
+    height: 200px;
+  }
+
+  .assortment__card2 {
+    width: 100%;
+  }
+
+  .assortment__card5 {
+    height: auto;
+  }
+
+  .sunflower__wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateY(130%);
+  }
+
+  .oil-man__logo-sunflower {
+    bottom: auto;
+    width: 100%;
+    position: relative;
+    transform: translateY(-37%);
+  }
+
+  .moisture__content {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .moisture__view__wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .moisture__well__wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .moisture__view,
+  .moisture__view.open {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .moisture__box:nth-child(1) {
+    grid-column: 1 / 3;
+  }
+
+  .moisture__box:nth-child(2) {
+    grid-column: 4 / 6;
+  }
+
+  .moisture__box:nth-child(3) {
+    grid-column: 7 / 9;
+  }
+
+  .moisture__box:nth-child(4) {
+    grid-column: 10 / 12;
+  }
+
+  .moisture__box:nth-child(5) {
+    grid-column: 2 / 5;
+  }
+
+  .moisture__box:nth-child(6) {
+    grid-column: 6 / 9;
+  }
+
+  .moisture__box:nth-child(7) {
+    grid-column: 10 / 11;
+  }
+
+  .moisture__view__wrapper {
+    height: 680px;
+  }
+
+  .moisture__content {
+    gap: 20px;
+  }
 
 }
 
@@ -4119,7 +4834,6 @@ footer {
   }
 
   .bom__tetx-wrapper {
-    gap: 20px;
     width: 54%;
   }
 
@@ -4129,6 +4843,7 @@ footer {
 
   .base-second__des {
     font-size: 16px;
+    line-height: normal;
   }
 
   .fuming__title {
@@ -4194,6 +4909,7 @@ footer {
   }
 
   .oil-absorption__text {
+    padding: 20px;
     order: 2;
   }
 
@@ -4216,12 +4932,6 @@ footer {
     justify-items: center;
   }
 
-  // .bottle__card:nth-child(1),
-  // .bottle__card:nth-child(2),
-  // .bottle__card:nth-child(3),
-  // .bottle__card:nth-child(4),
-  // .bottle__card:nth-last-child(1){
-  // }
   .bottle__card:nth-child(1) {
     height: 113px;
   }
@@ -4257,6 +4967,230 @@ footer {
     top: -147px;
     width: 100%;
   }
+
+  .number-box__title,
+  .number-box__title_second {
+    font-size: 70px;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+
+  .control {
+    display: none;
+  }
+
+  .just-oil {
+    margin-bottom: 47px;
+  }
+
+  .control_adapt {
+    display: block;
+  }
+
+
+  .bottle__card:nth-child(1) {
+    width: 315px;
+    background-image: url('/src/images/source/green-box-adapt1.svg');
+    padding: 45px 38px 22px 30px;
+  }
+
+  .bottle__card:nth-child(2) {
+    width: 315px;
+    background-image: url('/src/images/source/green-box-adapt2.svg');
+    padding: 40px 20px 23px 30px;
+  }
+
+  .bottle__card:nth-child(4) {
+    width: 315px;
+    background-image: url('/src/images/source/green-box-adapt4.svg');
+    padding: 40px 20px 23px 30px;
+  }
+
+  .bottle__card:nth-child(3) {
+    width: 315px;
+    background-image: url('/src/images/source/green-box-adapt3.svg');
+    padding: 45px 38px 22px 30px;
+  }
+
+  .bottle__card:nth-child(5) {
+    width: 315px;
+    background-image: url('/src/images/source/green-box-adapt5.png');
+    padding: 45px 20px 25px 30px;
+  }
+
+  .bottle__card-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+
+  .bottle {
+    min-height: auto;
+    padding: 206px 20px 50px 20px;
+  }
+
+  .oil-man__wrapper {
+    padding: 155px 50px 112px 545px;
+  }
+
+  .sunflower-4 {
+    display: none;
+  }
+
+  .sunflower-5 {
+    display: none;
+  }
+
+  .container.text__container {
+    padding: 0 25px;
+  }
+
+  .sunflower-23 {
+    display: none;
+  }
+
+  .sunflower-24 {
+    display: none;
+  }
+
+  .sunflower-25 {
+    display: none;
+  }
+
+  .sunflower-26 {
+    display: none;
+  }
+
+  .sunflower-27 {
+    display: none;
+  }
+
+  .sunflower-28 {
+    display: none;
+  }
+
+  .sunflower-29 {
+    display: none;
+  }
+
+  .sunflower-30 {
+    display: none;
+  }
+
+  .sunflower-31 {
+    display: none;
+  }
+
+  .sunflower-32 {
+    display: none;
+  }
+
+  .sunflower-33 {
+    display: none;
+  }
+
+  .sunflower-34 {
+    display: none;
+  }
+
+  .sunflower-35 {
+    display: none;
+  }
+
+  .sunflower-36 {
+    display: none;
+  }
+
+  .comparison__title {
+    font-size: 30px;
+    margin-left: 30px;
+  }
+
+  .fat__container_grid {
+    margin: 0 50px;
+  }
+
+  .assortment__yellow-box.adapt {
+    display: none;
+  }
+
+  .assortment__yellow-box {
+    position: static;
+    width: 100%;
+  }
+
+  .assortment__title {
+    font-size: 38px;
+    line-height: normal;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .assortment__note {
+    display: none;
+  }
+
+  .assortment__title {
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 860px) {
+  .rusagro__img.aos-init.aos-animate {
+    width: 90%;
+  }
+
+  .lab-img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: left;
+    margin-bottom: 118px;
+    margin-bottom: 40px;
+  }
+
+  .rusagro__content {
+    margin-top: 25px;
+  }
+
+  .container.lab-img {
+    padding: 0;
+  }
+
+  .lab-img {
+    border-radius: 0%;
+  }
+
+  .oil-man__wrapper {
+    padding: 308px 50px 112px 545px;
+  }
+
+  .oil-man__img_adapt {
+    display: block;
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    transform: translateX(-50%);
+    top: -150px;
+    left: 50%;
+  }
+
+  .oil-man__img {
+    display: none;
+  }
+
+  .oil-man__wrapper {
+    padding: 464px 60px 247px 50px;
+  }
+
+  .advantages__container_grid {
+    justify-content: start;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -4265,8 +5199,10 @@ footer {
   }
 
   .prewiev__item {
-    padding: 17px 10px 17px;
-    font-size: 14px;
+    padding: 15px 21px;
+    font-size: 16px;
+    text-wrap: nowrap;
+    line-height: normal;
   }
 
   .bottle::before {
@@ -4331,6 +5267,7 @@ footer {
 
   .criteria__desc {
     font-size: 16px;
+    line-height: normal;
   }
 
   .criteria__card-number span {
@@ -4462,6 +5399,275 @@ footer {
     top: -113px;
     width: 100%;
   }
+
+  .control_adapt__num-container {
+    height: 543px;
+  }
+
+  .fryer-oil__container_grid {
+    margin-bottom: 150px;
+  }
+
+  .base__title {
+    font-size: 50px;
+    line-height: normal;
+  }
+
+  .base__text {
+    max-width: 621px;
+    order: 2;
+  }
+
+  .base__content {
+    background-image: url(/src/images/source/base__content-box.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 500px 300px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .base__content-title {
+    font-size: 150px;
+    line-height: normal;
+  }
+
+  .mySwiper__container {
+    padding: 0;
+  }
+
+  .swiper {
+    border-radius: 0 !important;
+  }
+
+  .swiper {
+    margin-bottom: 40px;
+  }
+
+  .moisture__well__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .moisture__box:nth-child(1),
+  .moisture__box:nth-child(2),
+  .moisture__box:nth-child(3),
+  .moisture__box:nth-child(4),
+  .moisture__box:nth-child(5),
+  .moisture__box:nth-child(6),
+  .moisture__box:nth-child(7) {
+    grid-column: auto;
+    justify-items: center;
+  }
+
+  .moisture__box {
+    height: 238px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .wheel.wheel1 {
+    width: 195px;
+    height: 195px;
+  }
+
+  .wheel.wheel2 {
+    width: 182px;
+    height: 182px;
+    margin-top: 170px;
+  }
+
+  .wheel.wheel3 {
+    width: 184px;
+    height: 184px;
+  }
+
+  .wheel.wheel4 {
+    width: 200px;
+    height: 200px;
+    margin-top: 163px;
+
+  }
+
+  .wheel.wheel5 {
+    width: 240px;
+    height: 240px;
+    margin-top: 0px;
+  }
+
+  .wheel.wheel6 {
+    width: 200px;
+    height: 200px;
+    margin-top: 225px;
+  }
+
+  .wheel.wheel7 {
+    width: 180px;
+    height: 180px;
+    margin-top: 30px;
+  }
+
+  .rusagro__link {
+    display: block;
+  }
+
+  .menu__btn {
+    width: 100%;
+  }
+
+  .oil-man__wrapper {
+    margin-top: 176px;
+  }
+
+  .sunflower-11 {
+    position: absolute;
+    top: -140px;
+    right: 0;
+    z-index: -1;
+    width: 60px;
+  }
+
+  .sunflower-8 {
+    display: none;
+  }
+
+  .sunflower-13 {
+    position: absolute;
+    top: 4px;
+    right: 70px;
+    z-index: -1;
+    width: 24px;
+  }
+
+  .sunflower-12 {
+    position: absolute;
+    top: -123px;
+    z-index: -1;
+    left: 98px;
+  }
+
+
+  .sunflower-10 {
+    position: absolute;
+    top: -112px;
+    left: 434px;
+    width: 31px;
+    z-index: -1;
+  }
+
+  .sunflower-9 {
+    position: absolute;
+    top: -72px;
+    left: 12px;
+    width: 45px;
+    z-index: -1;
+  }
+
+  .oil-man_second-img {
+    width: 115%;
+  }
+
+  .sunflower-14 {
+    display: none;
+  }
+
+  .sunflower-15 {
+    position: absolute;
+    /* top: 802px; */
+    /* bottom: 58px; */
+    top: 807px;
+    right: 215px;
+    z-index: -1;
+    width: 40px;
+  }
+
+  .sunflower-16 {
+    position: absolute;
+    top: 766px;
+    right: 103px;
+    z-index: -1;
+    width: 33px;
+  }
+
+  .sunflower-17 {
+    display: none;
+  }
+
+  .sunflower-18 {
+    display: none;
+  }
+
+  .sunflower-19 {
+    display: none;
+  }
+
+  .wheel__blur {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 800;
+    display: none;
+  }
+
+  .wheel__blur.open {
+    display: block;
+  }
+
+  .wheel__pop-up_wrapper {
+    display: none;
+    z-index: 3000;
+  }
+
+  .wheel__pop-up_wrapper.open {
+    display: block;
+  }
+
+  .moisture__view__wrapper {
+    display: none;
+  }
+
+  .moisture__view,
+  .moisture__view.open {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translateX(0%);
+    transform: translateX(-50%);
+    position: absolute;
+    top: 150px;
+    left: 50%;
+  }
+
+  .pop-up__close {
+    position: absolute;
+    top: 95px;
+    right: 80px;
+  }
+
+  .moisture-title {
+    font-size: 90px;
+    line-height: normal;
+  }
+
+  .moisture-desc {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .pop-up__base-text {
+    font-size: 19px;
+  }
+
+  .pop-up__base-items {
+    font-size: 14px;
+  }
+
 }
 
 @media (max-width: 660px) {
@@ -4654,6 +5860,241 @@ footer {
     height: 288px;
   }
 
+  .num-container__title,
+  .num-container__title_second {
+    font-size: 100px;
+  }
+
+  .control_adapt__num-container {
+    height: 377px;
+  }
+
+  .num-container__desc,
+  .num-container__desc_second {
+    font-size: 16px;
+  }
+
+  .control_adapt__num-container {
+    justify-content: center;
+    gap: 38px;
+  }
+
+  .assortment__wrapper_flex {
+    flex-direction: column;
+  }
+
+  .assortiment__card {
+    min-height: 160px;
+  }
+
+  .assortiment__card {
+    padding: 20px;
+  }
+
+  .assortiment__card-desc {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+
+  .assortment__wrapper_flex,
+  .assortmen_card__flex_first,
+  .assortmen_card__flex_second,
+  .assortment__container_flex {
+    gap: 10px;
+  }
+
+  .assortment__card3 {
+    min-width: 90px;
+  }
+
+  .lab-img {
+    height: 230px;
+  }
+
+  .base__content-title {
+    font-size: 100px;
+    margin-bottom: 25px;
+  }
+
+  .fat__container_grid {
+    margin: 0;
+  }
+
+
+
+
+
+  .base__title {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .base__content-desc {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+
+  .base-img__container {
+    padding: 0;
+  }
+
+  .base-img {
+    border-radius: 0;
+  }
+
+  .fryer-oil__tetx {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .savings-bg {
+    height: 311px;
+  }
+
+  .savings {
+    height: 666px;
+  }
+
+  #image-cap1 {
+    bottom: 229px;
+    left: 523px;
+    width: 45px;
+  }
+
+  #image-cap2 {
+    left: 418px;
+    top: 654px;
+  }
+
+  #image-cap3 {
+    bottom: 13px;
+    left: 99px;
+    width: 37px;
+  }
+
+  #image-cap4 {
+    left: 637px;
+    bottom: 9px;
+    width: 30px;
+  }
+
+  #image-cap5 {
+    left: 635px;
+    top: 395px;
+    width: 51px;
+  }
+
+  #image-cap6 {
+    left: 398px;
+    top: 522px;
+    width: 44px;
+  }
+
+  #image-cap7 {
+    left: 467px;
+    top: 634px;
+    width: 17px;
+  }
+
+  #image-cap9 {
+    left: 367px;
+    bottom: 85px;
+    width: 40px;
+  }
+
+  #image-cap10 {
+    left: 402px;
+    bottom: 16px;
+    width: 20px;
+  }
+
+  #image-cap11 {
+    left: 558px;
+    top: 604px;
+  }
+
+  #image-cap12 {
+    left: 551px;
+    top: 519px;
+    width: 40px;
+  }
+
+  .savings__text span {
+    font-size: 100px !important;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+
+  .savings__desc {
+    font-size: 32px;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+
+
+
+  .moisture__view.moisture__view1 {
+    background-image: url('/src/images/source/vrag1.svg') !important;
+  }
+
+  .moisture__view.moisture__view2 {
+    background-image: url('/src/images/source/vrag2.svg') !important;
+  }
+
+  .moisture__view.moisture__view3 {
+    background-image: url('/src/images/source/vrag3.svg') !important;
+  }
+
+  .moisture__view.moisture__view4 {
+    background-image: url('/src/images/source/vrag4.svg') !important;
+  }
+
+  .moisture__view.moisture__view5 {
+    background-image: url('/src/images/source/vrag5.svg') !important;
+  }
+
+  .moisture__view.moisture__view6 {
+    background-image: url('/src/images/source/vrag6.svg') !important;
+  }
+
+  .moisture__view.moisture__view7 {
+    background-image: url('/src/images/source/vrag7.svg') !important;
+  }
+
+  .moisture__view {
+    width: 355px;
+    height: 635px;
+    padding: 42px 30px 42px 35px;
+  }
+
+  .wheel__title {
+    font-size: 26px;
+    line-height: normal;
+  }
+
+  .wheel__list {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .wheel__item {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .moisture__view {
+    width: 455px;
+    height: 835px;
+    padding: 109px 50px 42px 50px;
+  }
+
+
 }
 
 
@@ -4726,7 +6167,7 @@ footer {
   }
 
   .criteria__content-wrapper {
-    align-items: center;
+    align-items: start;
   }
 
   .advantages__title {
@@ -4747,6 +6188,9 @@ footer {
   .advantages__card-box {
     width: 350px;
     height: 155px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .advantages__title {
@@ -4933,8 +6377,92 @@ footer {
     line-height: 26px;
     letter-spacing: -0.04em;
     text-align: left;
-
   }
+
+  .oil-man__img_adapt {
+    width: 320px;
+    height: 320px;
+  }
+
+  .oil-man__marks {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTkiIGhlaWdodD0iNjYiIHZpZXdCb3g9IjAgMCA5OSA2NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik00OS41IDY1LjhMNzIgMC4zOTk5ODFIOTlMODQuOSA2NS44SDQ5LjVaTTAuNiA2NS44TDIzLjEgMC4zOTk5ODFINTAuMUwzNS43IDY1LjhIMC42WiIgZmlsbD0iI0ZGRTE4MCIvPg0KPC9zdmc+DQo=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+  }
+
+  .oil-man__desc {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+
+  .oil-man__wrapper {
+    padding: 303px 15px 95px 15px;
+  }
+
+  .oil-man__marks:nth-child(1) {
+    top: -85px;
+  }
+
+  .oil-man__marks:nth-child(3) {
+    bottom: -85px;
+  }
+
+  .oil-man__wrapper {
+    margin-top: 170px;
+  }
+
+  .sunflower-1 {
+    display: none;
+  }
+
+  .sunflower-2 {
+    display: none;
+  }
+
+  .sunflower-3 {
+    display: none;
+  }
+
+  .advantage {
+    margin-bottom: 80px;
+  }
+
+  .swiper-slide img {
+    height: 230px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .swiper-slide-img_my.border-10 {
+    border-radius: 0;
+  }
+
+  .swiper-slide {
+    height: auto;
+    width: 100%;
+  }
+
+  .base__desc {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .base {
+    padding-bottom: 40px;
+  }
+
+  .assortment__yellow-box {
+    height: 270px;
+  }
+
 }
 
 
@@ -4983,7 +6511,7 @@ footer {
   }
 
   .fryer-oil__title {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .classification__title {
@@ -5055,7 +6583,7 @@ footer {
 
 
   .advantage__title {
-    width: 100%;
+    width: 91%;
   }
 
   .stability__title {
@@ -5084,6 +6612,322 @@ footer {
 
     margin-top: 154px;
     margin-bottom: 85px;
+  }
+
+  .num-container__title,
+  .num-container__title_second {
+    font-size: 60px;
+  }
+
+  .control_adapt__num-container {
+    gap: 70px;
+  }
+
+  .assortment__title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+  }
+
+  .assortment {
+    padding-top: 80px;
+    padding-bottom: 78px;
+  }
+
+  .bottle__card:nth-child(1) {
+    width: 230px;
+    background-image: url('/src/images/source/green-box-adapt1.svg');
+    padding: 42px 5px 16px 17px;
+  }
+
+  .bottle__card:nth-child(2) {
+    width: 230px;
+    background-image: url('/src/images/source/green-box-adapt2.svg');
+    padding: 50px 5px 29px 17px;
+  }
+
+  .bottle__card:nth-child(4) {
+    width: 230px;
+    background-image: url('/src/images/source/green-box-adapt4.svg');
+    padding: 40px 20px 23px 17px;
+  }
+
+  .bottle__card:nth-child(3) {
+    width: 230px;
+    background-image: url('/src/images/source/green-box-adapt3.svg');
+    padding: 40px 8px 16px 17px;
+  }
+
+  .bottle__card:nth-child(5) {
+    width: 230px;
+    background-image: url('/src/images/source/green-box-adapt5.png');
+    padding: 50px 5px 24px 17px;
+  }
+
+  .bottle__card,
+  .bottle__card-text {
+    font-size: 14px;
+  }
+
+  .oil-advantage {
+    width: 105px;
+    top: -76px;
+  }
+
+  .advantage__container_flex {
+    padding-top: 9px;
+  }
+
+  .advantage__title {
+    font-size: 20px;
+  }
+
+  .advantage__container_flex {
+    gap: 25px;
+  }
+
+  .advantage__text {
+    font-size: 15px;
+  }
+
+  .advantage__text {
+    padding-left: 17px;
+  }
+
+  .advantage__wrapper {
+    gap: 25px;
+  }
+
+  .advantages {
+    padding-top: 80px;
+  }
+
+  .fryer-oil__conteiner_flex {
+    padding-top: 104px;
+    margin-bottom: 30px;
+  }
+
+  .savings-bg {
+    height: 178px;
+  }
+
+  .savings__text span {
+    font-size: 59px !important;
+  }
+
+  .savings__desc {
+    font-size: 25px;
+  }
+
+  .savings {
+    height: 504px;
+  }
+
+  #image-cap1 {
+    bottom: 18px;
+    left: 305px;
+    width: 40px;
+  }
+
+  #image-cap2 {
+    left: 304px;
+    top: 429px;
+    width: 12px;
+  }
+
+  #image-cap3 {
+    bottom: -40px;
+    left: 59px;
+    width: 19px;
+  }
+
+  #image-cap4 {
+    left: 369px;
+    bottom: 9px;
+    width: 13px;
+  }
+
+  #image-cap5 {
+    left: 368px;
+    top: 401px;
+    width: 24px;
+  }
+
+  #image-cap6 {
+    left: 231px;
+    top: 391px;
+    width: 19px;
+  }
+
+  #image-cap7 {
+    left: 369px;
+    top: 401px;
+    width: 15px;
+  }
+
+  #image-cap8 {
+    left: 296px;
+    bottom: 36px;
+  }
+
+  #image-cap9 {
+    left: 262px;
+    bottom: 81px;
+    width: 40px;
+  }
+
+  #image-cap10 {
+    left: 193px;
+    bottom: -12px;
+    width: 24px;
+  }
+
+  #image-cap11 {
+    left: 167px;
+    top: 469px;
+    width: 10px;
+  }
+
+  #image-cap12 {
+    left: 104px;
+    top: 388px;
+    width: 40px;
+  }
+
+  .menu__btn {
+    padding: 15px 20px 15px;
+    font-size: 17px;
+    text-wrap: wrap;
+  }
+
+  .savings__text {
+    margin-bottom: 5px;
+  }
+
+  .savings {
+    height: 480px;
+  }
+
+  .savings__text {
+    font-size: 28px !important;
+    text-align: center;
+  }
+
+  .savings__desc {
+    text-align: center;
+    font-size: 25px;
+    line-height: normal;
+  }
+
+
+  .wheel.wheel1 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .wheel.wheel2 {
+    width: 165px;
+    height: 165px;
+    margin-top: 170px;
+  }
+
+  .wheel.wheel3 {
+    width: 160px;
+    height: 160px;
+  }
+
+  .wheel.wheel4 {
+    width: 200px;
+    height: 200px;
+    margin-top: 163px;
+
+  }
+
+  .wheel.wheel5 {
+    width: 190px;
+    height: 190px;
+    margin-top: 0px;
+  }
+
+  .wheel.wheel6 {
+    width: 200px;
+    height: 200px;
+    margin-top: 225px;
+  }
+
+  .wheel.wheel7 {
+    width: 140px;
+    height: 140px;
+    margin-top: 30px;
+  }
+
+  .moisture__content {
+    padding-top: 0;
+    margin-bottom: 60px;
+  }
+
+  .moisture__box {
+    height: 200px;
+
+  }
+
+  .wheel.wheel7 {
+    margin-top: 0;
+  }
+
+  .wheel.wheel3 {
+    margin-top: 0;
+  }
+
+  .rusagro__title {
+    margin-bottom: 20px;
+  }
+
+  .rusagro__desc {
+    margin-bottom: 30px;
+  }
+
+  .rusagro__container_flex_first {
+    gap: 28px;
+  }
+
+  .rusagro_first {
+    margin-bottom: 0;
+  }
+
+  .heands {
+    height: 233px;
+  }
+
+  .oil-man__wrapper {
+    margin-top: 145px;
+  }
+
+  .bom__sub-title {
+    font-size: 26px;
+  }
+
+  .bom__tetx-wrapper {
+    gap: 25px;
+  }
+
+  .moisture__view {
+    width: 355px;
+    height: 635px;
+    padding: 85px 36px 52px 40px;
+  }
+
+  .pop-up__close {
+    position: absolute;
+    top: 68px;
+    right: 55px;
+  }
+
+  .wheel__title {
+    font-size: 22px;
+    line-height: normal;
   }
 }
 
@@ -5193,6 +7037,73 @@ footer {
     width: 45px;
     border-radius: 38px;
   }
+
+  .control_adapt__num-container {
+    gap: 50px;
+  }
+
+  .control_adapt__num-container {
+    height: 257px;
+  }
+
+  .assortiment__card-desc {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .assortment__card3 {
+    min-width: 50px;
+  }
+
+  .assortment__card6 {
+    min-width: 90px;
+  }
+
+  .prewiev__wrapper {
+    padding-top: 105px;
+  }
+
+  .advantages__title {
+    font-size: 35px;
+    line-height: normal;
+  }
+
+  .classification__namber {
+    padding-top: 5px;
+    padding-left: 13px;
+  }
+
+  .bom {
+    background-position: top;
+  }
+
+  .fryer-oil__conteiner_flex {
+    justify-content: center;
+  }
+
+  .bom__sub-title {
+    font-size: 22px;
+  }
+
+  .bom__btn {
+    padding: 20px 15px;
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .sunflower-14 {
+    display: block;
+    position: absolute;
+    top: 787px;
+    right: 0;
+    width: 60px;
+    z-index: 1;
+  }
+
+  .assortment__yellow-box {
+    height: 224px;
+  }
+
 }
 
 @media (max-width: 380px) {
@@ -5236,4 +7147,71 @@ footer {
     width: 100%;
   }
 
+  .oil-man__img_adapt {
+    width: 300px;
+    height: 300px;
+    top: -89px;
+    left: 50%;
+  }
 
+
+  .wheel.wheel4 {
+    width: 170px;
+    height: 170px;
+  }
+
+  .wheel.wheel5 {
+    width: 170px;
+    height: 170px;
+
+  }
+
+  .wheel.wheel6 {
+    width: 170px;
+    height: 170px;
+    margin-top: 225px;
+  }
+
+  // .tetx-white {
+  //   font-size: 16px;
+  //   line-height: normal;
+  // }
+  .moisture-title {
+    font-size: 70px;
+  }
+
+  .bom__container_grid {
+    margin-top: 44px;
+  }
+
+  .bom__container_grid {
+    gap: 44px;
+  }
+
+  .fuming__number {
+    font-size: 72px;
+    line-height: normal;
+  }
+
+  .fuming__content {
+    padding: 10px 30px 15px 10px;
+  }
+}
+
+@media (max-width: 340px) {
+
+  .num-container__title,
+  .num-container__title_second {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+
+  .control_adapt__title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .bom__green-title {
+    font-size: 22px;
+  }
+}
