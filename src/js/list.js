@@ -12,7 +12,7 @@ const list = () => {
             });
         } else {
             items.slideDown(duration, function () {
-                button.text('Скрыть список'); // Если элементы видимы
+                button.text('Скрыть'); // Если элементы видимы
                 isVisible = true; // Обновляем состояние
             });
         }

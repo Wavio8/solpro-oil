@@ -1,43 +1,6 @@
 * {
   box-sizing: border-box;
-
 }
-
-// @font-face {
-//   font-family: 'Golos Text';
-//   src: url(/css/fonts/Golos-Text_Regular.ttf);
-//   font-weight: 400;
-// }
-// @font-face {
-//   font-family: 'Golos Text';
-//   src: url(/css/fonts/Golos-Text_Medium.ttf);
-//   font-weight: 500;
-// }
-// @font-face {
-//   font-family: 'MuseoSansCyrl';
-//   src: url(/css/fonts/MuseoSansCyrl-300.ttf);
-//   font-weight: 300;
-// }
-// @font-face {
-//   font-family: 'MuseoSansCyrl';
-//   src: url(/css/fonts/MuseoSansCyrl-500.ttf);
-//   font-weight: 500;
-// }
-// @font-face {
-//   font-family: 'MuseoSansCyrl';
-//   src: url(/css/fonts/MuseoSansCyrl-700.ttf);
-//   font-weight: 700;
-// }
-// @font-face {
-//   font-family: 'MuseoSansCyrl';
-//   src: url(/css/fonts/MuseoSansCyrl-900.ttf);
-//   font-weight: 900;
-// }
-// @font-face {
-//   font-family: 'MuseoSansCyrl';
-//   src: url(/css/fonts/MuseoSansCyrl-100.ttf);
-//   font-weight: 100;
-// }
 
 html {
   scroll-behavior: smooth;
@@ -56,7 +19,6 @@ body {
 a {
   text-decoration: none;
 }
-
 
 .container {
   width: 1580px;
@@ -78,7 +40,6 @@ a {
 
 .text-orange {
   color: rgba(253, 160, 54, 1);
-
 }
 
 .text-green {
@@ -107,7 +68,6 @@ a {
 
 .background-yellow {
   background-color: rgba(255, 248, 223, 1);
-  ;
 }
 
 .background-blue {
@@ -224,7 +184,6 @@ a {
   display: flex;
   justify-content: center;
   gap: 40px;
-
 }
 
 .menu__container {
@@ -287,7 +246,6 @@ a {
   min-width: 100%;
 }
 
-
 .container.lab-img {
   padding: 0 170px;
 }
@@ -340,17 +298,12 @@ a {
   }
 }
 
-
-
-
 .prewiev {
   background: url('/src/images/source/bg-prew__compressed.png');
   background-position: top left;
   background-size: 556px auto;
   background-repeat: no-repeat;
-
 }
-
 
 .gradient-box {
   width: 300px;
@@ -360,9 +313,6 @@ a {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
   /* Градиент от белого к прозрачному */
 }
-
-
-
 
 .prewiev__wrapper {
   display: flex;
@@ -374,7 +324,6 @@ a {
   padding: 0 auto;
   padding-top: 150px;
   margin: 0 auto;
-
 }
 
 .prewiev__logo {
@@ -550,9 +499,6 @@ a {
   background-position: center;
   background-size: contain;
 }
-
-
-
 
 .advantage {
   margin-bottom: 208px;
@@ -807,21 +753,17 @@ a {
 }
 
 .sunflower__wrapper {
-
   position: absolute;
-
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-
   bottom: 118px;
   height: 470px;
   width: 1580px;
 }
 
 .oil-man__logo-sunflower {
-  //transform: translateX(-50%);
   bottom: -655px;
   position: relative;
 }
@@ -836,7 +778,6 @@ a {
 .advantage__container_flex {
   display: flex;
   gap: 154px;
-  // max-height: 350px;
 }
 
 .advantage__title {
@@ -882,7 +823,6 @@ a {
 .advantage__text:nth-child(2) {
   position: relative;
 }
-
 
 .advantage__text:nth-child(2)::before {
   position: absolute;
@@ -947,7 +887,6 @@ a {
   position: relative;
 }
 
-
 .savings-bg {
   position: absolute;
   /* top: 0; */
@@ -982,22 +921,18 @@ a {
   }
 
   55% {
-
     opacity: 0;
   }
 
   60% {
-
     opacity: 0;
   }
 
   70% {
-
     opacity: 1;
   }
 
   80% {
-
     opacity: 0;
   }
 
@@ -1030,11 +965,6 @@ a {
   bottom: -103px;
   right: 0;
 }
-
-// .savings-bg.animate {
-//   transform: translateX(-100%);
-//   opacity: 1;
-// }
 
 .rusagro_first {
   margin-bottom: 43px;
@@ -1105,7 +1035,6 @@ a {
   top: 362px;
 }
 
-
 .control {
   margin-bottom: 180px;
 }
@@ -1120,21 +1049,18 @@ a {
   height: 100%;
 }
 
-
 .control__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  /* justify-content: space-between; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
   gap: 100px;
 }
-
 
 .lab-img {
   width: 100%;
@@ -1172,7 +1098,6 @@ a {
   width: 284px;
 }
 
-
 .control__wrapper-number {
   height: 100%;
   width: 70%;
@@ -1187,7 +1112,6 @@ a {
   gap: 166px;
 }
 
-
 .control__wrapper-number.revers {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzc4IiBoZWlnaHQ9IjI5MCIgdmlld0JveD0iMCAwIDc3OCAyOTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBvcGFjaXR5PSIwLjUiIGQ9Ik0wIDE2QzAgNy4xNjM0NSA3LjE2MzQ0IDAgMTYgMEg3NzhWMTA1Qzc3OCAyMDcuMTczIDY5NS4xNzMgMjkwIDU5MyAyOTBIMTZDNy4xNjM0NiAyOTAgMCAyODIuODM3IDAgMjc0VjE2WiIgZmlsbD0iIzlFNDYwMCIvPg0KPHBhdGggZD0iTTAgMTVDMCA2LjcxNTczIDYuNzE1NzMgMCAxNSAwSDQwMUM0MDkuMjg0IDAgNDE2IDYuNzE1NzMgNDE2IDE1VjI5MEgxNUM2LjcxNTc0IDI5MCAwIDI4My4yODQgMCAyNzVWMTVaIiBmaWxsPSIjRkZGOERGIi8+DQo8cGF0aCBkPSJNNDE2IDk4LjAwNzhDNDE2IDE0NS4wMDMgNTI1IDE0NS4wMDggNTI1IDE0NS4wMDhDNTI1IDE0NS4wMDggNDE2IDE2OS4wMDggNDE2IDI0Mi4wMDhDNDE2IDMxNS4wMDggMzgwIDE2OS4wMDggMzgwIDE2OS4wMDhDMzgwIDE2OS4wMDggNDE2IDUxLjAxMjcgNDE2IDk4LjAwNzhaIiBmaWxsPSIjRkZGOERGIi8+DQo8L3N2Zz4NCg==);
   height: 100%;
@@ -1201,7 +1125,6 @@ a {
   display: flex;
   gap: 155px;
 }
-
 
 .number-box__title {
   font-size: 100px;
@@ -1227,7 +1150,7 @@ a {
   transform: translateX(-50%);
   right: 0;
   z-index: 0;
-  width: 35%;
+  width: 55%;
 }
 
 .number-box__title_second {
@@ -1251,20 +1174,36 @@ a {
   color: rgba(255, 255, 255, 1);
 }
 
-
 .control__wrapper-number {
   padding: 55px;
 }
 
+.yellow-box__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
 
+.sunflower-box {
+  background-image: url('/src/images/source/sunflower-box1.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+  height: 438px;
+}
+
+.assortment__title {
+  padding-top: 80px;
+}
 // АДАПТИВ СЕКЦИИ CONTROL
-
 .control_adapt {
   background: linear-gradient(90deg, #F5C51B 0%, #ED8E00 100%);
   padding: 67px 0px 29px 0px;
   border-radius: 0 150px 0 0;
   margin-bottom: 70px;
   display: none;
+  position: relative;
 }
 
 .control_adapt__title {
@@ -1291,11 +1230,11 @@ a {
   padding-left: 10%;
 }
 
-.assortment__yellow-box {
+.assortment__yellow-box.adapt {
   display: none;
 }
 
-.assortment__yellow-box.adapt {
+.assortment__yellow-box {
   display: block;
 }
 
@@ -1322,7 +1261,6 @@ a {
   margin-bottom: 19px;
 }
 
-
 .num-container__title_second {
   color: rgb(255, 255, 255) !important;
   font-size: 150px;
@@ -1334,8 +1272,6 @@ a {
 .num-container__desc_second {
   color: rgb(255, 255, 255) !important;
 }
-
-
 
 .num-container__desc {
   font-size: 35px;
@@ -1353,10 +1289,6 @@ a {
   text-align: left;
   color: rgb(255, 255, 255) !important;
 }
-
-
-
-
 
 .rusagro__title {
   font-size: 50px;
@@ -1424,9 +1356,6 @@ a {
   position: relative;
 }
 
-
-
-
 .oil-man__wrapper {
   margin-top: 276px;
   border-radius: 300px 300px 0 0;
@@ -1458,8 +1387,6 @@ a {
 .menu-blur {
   display: none;
 }
-
-
 
 .oil-man__img,
 .oil-man__img_adapt {
@@ -1529,7 +1456,6 @@ a {
   position: relative;
 }
 
-
 .oil-man_second-img {
   height: 873px;
   -o-object-fit: contain;
@@ -1542,7 +1468,6 @@ a {
   margin: 0 auto;
   width: 100%;
 }
-
 
 .container-oil-gif {
   overflow: hidden;
@@ -1557,7 +1482,6 @@ a {
   transform: translateX(-50%);
 }
 
-
 .classification {
   position: relative;
   z-index: 2;
@@ -1567,7 +1491,7 @@ a {
 .classification__container_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-top: 136px;
+  padding-top: 10px;
   padding-bottom: 137px;
   align-items: flex-end;
   column-gap: 20px;
@@ -1581,6 +1505,8 @@ a {
   letter-spacing: -0.03em;
   text-align: left;
   text-wrap: nowrap;
+  padding-top: 70px;
+  padding-bottom: 20px;
 }
 
 .classification__text {
@@ -1728,7 +1654,6 @@ a {
   opacity: 0.3;
 }
 
-
 .bom__card-title {
   font-size: 24px;
   font-weight: 700;
@@ -1746,7 +1671,7 @@ a {
 
 .criteria {
   background-size: 541px auto;
-  background-image: url('/src/images/source/oil-bbb-oil.png');
+  background-image: url('/src/images/source/oil-wave-persent.png');
   background-position: bottom left;
   background-size: 541px 416px;
   background-repeat: no-repeat;
@@ -2431,6 +2356,16 @@ a {
 }
 
 
+.wheel {
+  transition: all .3s ease;
+}
+
+.wheel:hover {
+  transform: scale(1.1);
+  /* Увеличение на 5% */
+  opacity: 0.8;
+}
+
 
 .wheel__title {
   font-size: 29px;
@@ -2701,6 +2636,11 @@ a {
 .drop__wrapper {
   position: relative;
 }
+
+// .control__drop-oil_adapt{
+//   display: none;
+// }
+
 
 .fuming__drop {
   position: absolute;
@@ -3029,7 +2969,7 @@ a {
 }
 
 .assortment {
-  padding: 120px 0 135px 0;
+  padding: 0px 0 135px 0;
   position: relative;
 }
 
@@ -3132,7 +3072,34 @@ a {
   letter-spacing: -0.02em;
   text-align: left;
   max-width: 713px;
-  margin-bottom: 70px;
+  /* margin-bottom: 153px; */
+}
+
+
+.sunflower-box {
+  position: relative;
+  // padding: 328px 20px 20px 106px;
+}
+
+.assortment__title {
+  padding-top: 250px;
+}
+
+.sunflower-box-text {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.yellow-box__wrapper {
+  position: relative;
+  top: -150px;
 }
 
 .assortment__note {
@@ -3349,7 +3316,7 @@ footer {
 }
 
 .social__wrapper_menu {
-  margin-bottom: 50px;
+  margin-bottom: 22px;
 }
 
 .rules__wrapper {
@@ -3433,7 +3400,7 @@ footer {
   letter-spacing: -0.02em;
   text-align: left;
   color: rgba(255, 255, 255, 1);
-  margin-bottom: 38px;
+  margin-bottom: 22px;
 }
 
 .rules__link {
@@ -3594,7 +3561,7 @@ footer {
 
   .classification__container_grid {
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 100px;
+    // padding-top: 100px;
     padding-bottom: 100px;
     row-gap: 60px;
   }
@@ -3619,10 +3586,12 @@ footer {
 
   .fuming__number {
     font-size: 120px;
+
   }
 
   .fuming__number-desc {
     font-size: 26px;
+    line-height: normal;
   }
 
   .container_comparison {
@@ -3877,7 +3846,7 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     min-width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .control__box_first,
@@ -4165,6 +4134,8 @@ footer {
     object-fit: contain;
   }
 
+
+
   .container_control.revers {
     margin: 0 0 0 30%;
   }
@@ -4268,7 +4239,7 @@ footer {
   }
 
   .advantages__title {
-    text-align: center;
+    text-align: left;
   }
 
   .chips__logo {
@@ -4398,6 +4369,7 @@ footer {
   .menu__container {
     justify-content: space-between;
   }
+
 
 
 }
@@ -4650,19 +4622,45 @@ footer {
     gap: 20px;
   }
 
+
+
+
 }
 
 @media (max-width: 992px) {
 
   .menu-el_adapt {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    padding-top: 52px;
+    padding-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-    margin-top: 54px;
+    margin-top: 9px;
     width: 85%;
-    margin-bottom: 50px;
+    margin-bottom: 13px;
+  }
+
+
+  .control__drop-oil {
+    position: absolute;
+    bottom: auto;
+    top: -263px;
+    right: 52px;
+    left: auto;
+    height: 590px;
+    width: 189px;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+
+  .moisture-title.text-yellow {
+    padding: 0;
   }
 
   .menu__btn_adapt-menu {
@@ -4676,7 +4674,7 @@ footer {
     line-height: 21.6px;
     letter-spacing: -0.01em;
     text-align: right;
-    padding: 10px 100px;
+    padding: 9px 100px;
     display: block;
     min-width: 100%;
   }
@@ -4723,7 +4721,7 @@ footer {
     width: 100%;
     height: 100%;
     z-index: 900;
-    padding-top: 131px;
+    padding-top: 88px;
   }
 
   .menu-blur.open {
@@ -4822,8 +4820,10 @@ footer {
   }
 
   .bom {
-    background-size: 400px auto;
+    background-size: 412px auto;
   }
+
+
 
   .bom__sub-title {
     font-size: 28px;
@@ -5113,12 +5113,15 @@ footer {
   }
 
   .assortment__yellow-box.adapt {
-    display: none;
+    display: block;
+    position: static;
+    width: 100%;
+    background-size: contain;
+    margin-bottom: 25px;
   }
 
   .assortment__yellow-box {
-    position: static;
-    width: 100%;
+    display: none;
   }
 
   .assortment__title {
@@ -5135,6 +5138,23 @@ footer {
   .assortment__title {
     text-align: center;
   }
+
+  .sunflower-box {
+    // padding: 360px 100px 100px 220px;
+  }
+
+  .yellow-box__wrapper {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sunflower-box {
+    width: 100%;
+
+  }
+
 }
 
 
@@ -5380,7 +5400,7 @@ footer {
 
   .stability__title {
     font-size: 40px;
-    text-align: center;
+    text-align: left;
   }
 
   .stability__container_flex {
@@ -5512,6 +5532,28 @@ footer {
 
   .rusagro__link {
     display: block;
+  }
+
+  .sunflower-box {
+    // padding: 213px 50px 39px 74px;
+    // height: auto;
+  }
+
+  .assortment__title {
+    margin-bottom: 0px;
+  }
+
+  .assortment__title {
+    padding-top: 30px;
+  }
+
+  .yellow-box__wrapper {
+    position: relative;
+    top: 0;
+  }
+
+  .yellow-box__wrapper {
+    margin-bottom: 25px;
   }
 
   .menu__btn {
@@ -5923,8 +5965,10 @@ footer {
     margin: 0;
   }
 
-
-
+  .control__drop-oil {
+    top: -113px;
+    right: 9px;
+  }
 
 
   .base__title {
@@ -6105,6 +6149,15 @@ footer {
     line-height: 44px;
   }
 
+  .oil-absorption__desc {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .fuming__desc {
+    line-height: 22px;
+  }
+
   .menu__title_padding {
     padding-left: 85.4px;
     display: inline-block;
@@ -6138,6 +6191,30 @@ footer {
     margin-bottom: 103px;
   }
 
+  .base-second__des {
+    line-height: 22px;
+  }
+
+  .fuming__number {
+    font-size: 90px;
+    margin-bottom: 10px;
+  }
+
+  .fuming__number-desc {
+    font-size: 26px;
+  }
+
+  .sunflower-box {
+
+    width: 100%;
+    height: 314px;
+  }
+
+  .sunflower-box-text {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
   .bottle {
     margin-bottom: 70px;
     padding: 0px 20px 50px 20px;
@@ -6162,12 +6239,16 @@ footer {
   }
 
   .classification__container_grid {
-    padding-top: 70px;
+    // padding-top: 70px;
     padding-bottom: 70px;
   }
 
   .criteria__content-wrapper {
-    align-items: start;
+    align-items: center;
+  }
+
+  .criteria__card-desc {
+    text-align: center;
   }
 
   .advantages__title {
@@ -6463,6 +6544,38 @@ footer {
     height: 270px;
   }
 
+  .bom__card-number {
+    padding-left: 23px;
+  }
+
+  .control_adapt__title {
+    font-size: 36px;
+  }
+
+  .control__drop-oil {
+    height: 285px;
+    width: 114px;
+    top: 47px;
+    right: 7px;
+  }
+
+  .desig-gradient {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(20.06%, #FFFFFF), color-stop(94.99%, rgba(255, 255, 255, 0)));
+    background: linear-gradient(0deg, #FFFFFF -2.94%, rgba(255, 255, 255, 0) 50.99%);
+  }
+
+  .base__desc {
+    line-height: 23px;
+  }
+
+  .fat__title {
+    text-align: left;
+  }
+
+  .fat__card {
+    min-width: auto;
+
+  }
 }
 
 
@@ -6591,7 +6704,6 @@ footer {
     font-weight: 700;
     line-height: 34px;
     letter-spacing: -0.02em;
-    text-align: left;
 
   }
 
@@ -6628,7 +6740,7 @@ footer {
     font-weight: 700;
     line-height: 30px;
     letter-spacing: -0.02em;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 
   .assortment {
@@ -6738,7 +6850,7 @@ footer {
   }
 
   #image-cap3 {
-    bottom: -40px;
+    bottom: -2px;
     left: 59px;
     width: 19px;
   }
@@ -6780,7 +6892,7 @@ footer {
 
   #image-cap10 {
     left: 193px;
-    bottom: -12px;
+    bottom: -6px;
     width: 24px;
   }
 
@@ -6902,7 +7014,7 @@ footer {
   }
 
   .oil-man__wrapper {
-    margin-top: 145px;
+    margin-top: 180px;
   }
 
   .bom__sub-title {
@@ -6950,6 +7062,7 @@ footer {
 
   .bom__card-number {
     font-size: 120px;
+
   }
 
   .advantages__card-box {
@@ -7104,6 +7217,20 @@ footer {
     height: 224px;
   }
 
+  .sunflower-box {
+
+    height: 243px;
+  }
+
+  .sunflower-box-text {
+    font-size: 15px;
+    line-height: normal;
+  }
+
+  .control_adapt__title {
+    font-size: 30px;
+  }
+
 }
 
 @media (max-width: 380px) {
@@ -7122,9 +7249,9 @@ footer {
     font-size: 25px;
   }
 
-  .oil-absorption__desc {
-    font-size: 15px;
-  }
+  // .oil-absorption__desc {
+  //   font-size: 15px;
+  // }
 
   .fat__card-number {
     font-size: 40px;
@@ -7154,6 +7281,9 @@ footer {
     left: 50%;
   }
 
+  .fryer-oil__title {
+    font-size: 36px;
+  }
 
   .wheel.wheel4 {
     width: 170px;
@@ -7172,10 +7302,10 @@ footer {
     margin-top: 225px;
   }
 
-  // .tetx-white {
-  //   font-size: 16px;
-  //   line-height: normal;
-  // }
+  .oil-man__wrapper {
+    margin-top: 140px;
+  }
+
   .moisture-title {
     font-size: 70px;
   }
@@ -7188,14 +7318,31 @@ footer {
     gap: 44px;
   }
 
-  .fuming__number {
-    font-size: 72px;
-    line-height: normal;
-  }
+  // .fuming__number {
+  //   font-size: 72px;
+  //   line-height: normal;
+  // }
 
   .fuming__content {
     padding: 10px 30px 15px 10px;
   }
+
+  .fuming__number {
+    font-size: 86px;
+
+  }
+
+  .fuming__number-desc {
+    font-size: 23px;
+  }
+
+  .control__drop-oil {
+    height: 260px;
+    width: 94px;
+    top: 62px;
+    right: 4px;
+  }
+
 }
 
 @media (max-width: 340px) {
@@ -7207,8 +7354,8 @@ footer {
   }
 
   .control_adapt__title {
-    font-size: 40px;
-    margin-bottom: 20px;
+    // font-size: 40px;
+    // margin-bottom: 20px;
   }
 
   .bom__green-title {
